@@ -37,7 +37,27 @@ Organization Priorities
   - Manage benefits and risks
 
 Operating Models:
-  - 
+  - Application Engineering
+  - Application Operations
+  - Platform Engineering 
+  - Platform Operations
+
+Application Engineering: Business software that is custom developed or commerical off the shelf that that developed, built, and tested.
+Application Operations: Deploying buisness software and then operating and managing applications in production.
+Platform Engineering: Building infrastructure that the Application will run on such as Computer, Network, Storage, etc.
+Platform Operations: Mantaining and supporting the platform in production.
+
+## Organization Culture
+  - Executive Sponsorship
+  - Team members are empowered to take action when outcomes are at risks
+  - Escalation is encouraged
+  - Communications are timely, clear, and actionable
+  - Experimentation is encouraged
+  - Team members are empowered, encouraged to maintain and grow skill sets
+  - Resource teams appropriately
+  - Diverse opinions are encouraged and sought within and across teams
+
+
 
 
 
