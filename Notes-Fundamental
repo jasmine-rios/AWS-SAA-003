@@ -18,12 +18,13 @@ Op Ex Design Priciples:
   - Anticipate failure.
   - Learn from all operational failures.
 
+## Op Ex Best Practices
+
 Op Ex Best Practices Focus Areas:
   - Organization
   - Prepare
   - Operate
   - Evolve
-## Op Ex Best Practices
 
 ### Organization Focus Area
 
@@ -56,6 +57,17 @@ Platform Operations: Mantaining and supporting the platform in production.
   - Team members are empowered, encouraged to maintain and grow skill sets
   - Resource teams appropriately
   - Diverse opinions are encouraged and sought within and across teams
+
+## Prepare Focus area
+
+### Design Telemetry
+
+  - Implement application telemetry
+  - Implement and configure workload telemetry
+  - Implement user activity telemetry
+  - Implement dependency telemetry
+  - Implement transaction traceability
+
 
 
 
