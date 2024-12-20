@@ -9,3 +9,37 @@ There is 6 pillars of Well-Architected:
   - Cost Optimization
   - Sustainability
 
+Operational Excellence: Ability to support workloads effectively, gain insight on operations, and improve supporting proceses to deliver buisness value.
+
+Op Ex Design Priciples:
+  - Perform operations as code.
+  - Make frequent, small, reversible changes.
+  - Refine operartions procedures frequently.
+  - Anticipate failure.
+  - Learn from all operational failures.
+
+Op Ex Best Practices Focus Areas:
+  - Organization
+  - Prepare
+  - Operate
+  - Evolve
+## Op Ex Best Practices
+
+### Organization Focus Area
+
+Organization Priorities
+  - Evaluate external customer needs
+  - Evaluate internal customer needs
+  - Evaluate governance requirements
+  - Evaluate compliance requirements
+  - Evaluate threat landscape
+  - Evaluate trade-offs
+  - Manage benefits and risks
+
+Operating Models:
+  - 
+
+
+
+
+
