@@ -92,6 +92,8 @@ Design your workload so it provides information necessary for you to understand 
   - Automate testing and rollback
 
 ### Operational Readiness and Change Management
+Evaluate the operational readiness of your workload, processes, procedures, and personnel to understand the risks and manage change with consistant process.
+The Checklist of managing change:
 - Ensure personnel capability
 - Ensure a consistent review of operational readiness
 - Use runbooks to perform procedures
