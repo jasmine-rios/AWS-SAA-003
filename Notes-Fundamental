@@ -81,6 +81,15 @@ Design your workload so it provides information necessary for you to understand 
   - Make frequent, small, reversible changes
   - Fully automate integration and deployment
 
+### Mitigate Deployment Risks
+  - Plan for unsuccessful changes
+  - Test and Validate Changes
+  - Use Deployment Management Systems
+  - Test Using Limited Deployments
+  - Deploy using parallel environments
+  - Deploy frequent, small, reversible changes
+  - Fully automate integration and deployment
+  - Automate testing and rollback
 
 
 
