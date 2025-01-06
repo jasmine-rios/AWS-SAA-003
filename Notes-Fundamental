@@ -49,6 +49,7 @@ Platform Engineering: Building infrastructure that the Application will run on s
 Platform Operations: Mantaining and supporting the platform in production.
 
 ## Organization Culture
+Provide support for team members so they can be more effective at operating:
   - Executive Sponsorship
   - Team members are empowered to take action when outcomes are at risks
   - Escalation is encouraged
@@ -61,12 +62,25 @@ Platform Operations: Mantaining and supporting the platform in production.
 ## Prepare Focus area
 
 ### Design Telemetry
-
+Design your workload so it provides information necessary for you to understand its internal state:
   - Implement application telemetry
   - Implement and configure workload telemetry
   - Implement user activity telemetry
   - Implement dependency telemetry
   - Implement transaction traceability
+
+### Design for Operations
+
+  - Use version control
+  - Test and validate changes
+  - Use configuration management systems
+  - Peform patch management
+  - Share design standards
+  - Implement practices to imporve code quality
+  - Use multiple environments
+  - Make frequent, small, reversible changes
+  - Fully automate integration and deployment
+
 
 
 
