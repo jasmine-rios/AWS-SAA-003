@@ -26,7 +26,7 @@ Op Ex Best Practices Focus Areas:
   - Operate
   - Evolve
 
-### Organization Focus Area
+## Organization Focus Area
 
 Organization Priorities
   - Evaluate external customer needs
@@ -48,7 +48,7 @@ Application Operations: Deploying buisness software and then operating and manag
 Platform Engineering: Building infrastructure that the Application will run on such as Computer, Network, Storage, etc.
 Platform Operations: Mantaining and supporting the platform in production.
 
-## Organization Culture
+### Organization Culture
 Provide support for team members so they can be more effective at operating:
   - Executive Sponsorship
   - Team members are empowered to take action when outcomes are at risks
@@ -103,7 +103,32 @@ The Checklist of managing change:
 
 Runbooks are documented processes to achieve outcomes and playbooks are processes used to investigate an incident.
 
-ORR is Operational Readniness Reviews to validate 
+ORR (Operational Readniness Reviews) is an Amazon developed mechanism that uses requirements checklists and self-service to validate that teams can safely operate their workloads.
+Security, goverance, and compliance requirements can also be included in an ORR.
+
+A pre-mortem an exercise where a team simulates a failute to develop mitigation strategies. Use it to anticipate failures and create procedures where appropriate.
+
+## Operate Focus Area
+
+### Understand Workload Health
+Use workload metrics to gain visiability of workload health easily. Use the metrics to create dashboards with tech and business viewpoints to help drive decisions.
+
+- Identify key performance indicators
+- Define workload metrics
+- Collect and Analyze workload metrics
+- Establish workload metrics baselines
+- Learn expected patterns of activity for workload
+- Alert when workload outcomes are at risk
+- Alert when workload anomalies are detected
+- Validate the achievement of outcomes and KPI and metric effectiveness
+
+
+
+
+
+
+
+
 
 
 
