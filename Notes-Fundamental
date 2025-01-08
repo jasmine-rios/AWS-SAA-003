@@ -122,6 +122,9 @@ Use workload metrics to gain visiability of workload health easily. Use the metr
 - Alert when workload anomalies are detected
 - Validate the achievement of outcomes and KPI and metric effectiveness
 
+### Understanding Operational Health
+You might want to use metrics based on operations outcomes to gain useful insights. You should use these metrics to implement dashboards with business and technical viewpoints that will help drive decisions
+
 
 
 
