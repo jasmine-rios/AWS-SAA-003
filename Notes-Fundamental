@@ -125,6 +125,10 @@ Use workload metrics to gain visiability of workload health easily. Use the metr
 ### Understanding Operational Health
 You might want to use metrics based on operations outcomes to gain useful insights. You should use these metrics to implement dashboards with business and technical viewpoints that will help drive decisions
 
+Identify KIP based on desired business outcomes such as new features, and customer outcomes such as customer support cases.
+Evaluate KPIs to determine operations success
+Define operations metrics to measure the achievement of KPIs for example, successful deployments and failed deployments.
+
 
 
 
