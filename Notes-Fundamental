@@ -129,6 +129,18 @@ Identify KIP based on desired business outcomes such as new features, and custom
 Evaluate KPIs to determine operations success
 Define operations metrics to measure the achievement of KPIs for example, successful deployments and failed deployments.
 
+Define operations metrics to measure the health of operations activities such as mean time to detect an incident, or MTTD, and mean time to recovery, or MTTR, from an incident.
+
+Evaluate metrics to determine if operations are achieving desired outcomes, and to understand the health of your operations activities.
+
+Perform regular proactive reviews of metrics to identify trends and determine where appropriate responses are needed
+
+You should aggregate log data from your operations activities and operations API calls, into a service such as CloudWatch Logs.
+
+Alert when operations are at risk. If at risk, an alert must be raised and acted upon. Operations outcomes are any activity that supports a workload in production. Succh as deploying new versions of app to outage recovery.
+
+If alert is raised, a reference to cooresponding runbook or playbook should be included. Alerts without action can lead to alert fatigue.
+
 
 
 
