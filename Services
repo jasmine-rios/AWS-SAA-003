@@ -1,0 +1,12 @@
+Amazon Cognito
+Lets users sign in with facebook and other SAML 2.0 to your web and mobile app
+
+Amazon Detective
+Investigates root causes of potential security issues or suspicious activities of current and future accounts
+Using AWS security services such as GuardDuty, Macie, and Security hub can be used to identify security issues but not complex and deep investigations like Dectective
+Uses VPC flow logs, AWS CloudTrail, and Amazon Guardduty as data sources to create visualization of details to drill down to the root cause
+
+Amazon GuardDuty
+Threat detection that continously monitors for bad activity and weird behavior to protect AWS accounts, workloads, Kubernetes clusters, and S3 data
+Works with AWS Organizations for organizaion-wid analyzing of account events for signs of unauthorized use
+
