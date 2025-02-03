@@ -11,5 +11,10 @@ Threat detection that continously monitors for bad activity and weird behavior t
 Looks at unusual API calls, unauthorized deployments, and exfilterated credentials to indicate compromise.
 Works with AWS Organizations for organizaion-wide analyzing of account events for signs of unauthorized use
 Uses threat feeds and machine learning anomaly detection to detect anomalies in account and workload activity
-It sends detailed findings to GuardDuty, CloudWatch Events, and security hub
+It sends detailed findings to GuardDuty, CloudWatch Events, and security hub. Further investigation is done by Dectective
+
+Amazon Inspector
+Automated vulnerability management service that continously scans AWS workkloads for software vulnerabilities and unintended network exposure
+Uses acctoss all accounts once allowed and automatically discovers running EC2 instance and container images in ECR and scans for vulnerabilities
+
 
