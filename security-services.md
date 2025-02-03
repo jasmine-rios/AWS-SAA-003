@@ -72,5 +72,73 @@ With OCSF support, Security Lake normalizes and combines security data from AWS 
 
 A scalable, fine-grained permissions management and authorization service for custom applications you've built
 
-Allows dev to build secure apps faster by externalizing authorization and centralizing policy 
+Allows dev to build secure apps faster by externalizing authorization and centralizing policy management and administration
+
+Verified Permissions uses Cedar, an open-source policy language and SDK, to define fine-grained permissions for application users
+
+Your authorization model is defined using principal types, resource types, and valid actions, to control who can take what actions on which resources in a given app context
+
+Policy changes are audited so that you can see who made the changes and when.
+
+## AWS Artifact
+
+Go-to central resource for compliance-related information that matters to you.
+It provides on-demand access to AWS security and compliance reports and select online aggreements
+Reports avaliable in AWS Artifact include our Service Organization Controll (SOC) reports, Payment Card Industry (PCI) reports, and certifications from accreditation bodies across geographies and compliance verticals that validate the implementation and operating effectiveness of AWS security controls
+Also includes Business Associate Addendum (BAA) and Nondisclosure Agreement (NDA)
+
+## AWS Audit Manager
+
+Helps continously audit your AWS usuage to simplify how you access risk and compliance with regulations and industry standards
+Audit Manager automates evidence collection to resuce the "all hands on deck" manual effort that often happens for audits and enable you to scale your audit capability in the cloud as your business grows
+With audit manager, it is easy to access if your policies, procedures, and activities -- also known as controls -- are operating effectively
+
+When it's time for an audit, it helps you manage stakeholder reviews of your ontrols and enables you to build audit-ready reports with much less effort
+
+
+The AWS Audit Manager prebuilt frameworks help translate evidence from cloud services into auditor-friendly reports by mapping your AWS resources to the requirements in industry standards or regulations, such as CIS AWS Foundations Benchmark, the General Data Protection Regulation (GDPR), and Payment Card Industry Data Security Standard (PCI DSS)
+
+You can also fully customize a framework and its controls for your unique business requirements
+Based on the framework you select, Audit Manager launches an assessment that continously collects and organizes relevant evidence from your AWS accounts and resources, such as resource configuration snapshots, user activity, and compliance check results
+
+## AWS Certificate Manager
+
+Service that lets you easily provision, manage, and deploy Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificate for use with AWS services and your internal connected resources.
+
+SSL/TLS certificates are used to secure network communications and establish the identity of websites over the Internet as well as resources on private networks
+
+AWS Certificate Manager removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates
+
+
+You can quicly request a certificate, deploy it on ACM-integrated AWS resources, such as Elastic Load Balancing, Amazon CloudFront distibutions, and APIs on API Gateway, and let AWS Certificate Manager handle certificate renewals. It also enables you to create private certificates for your internal resources and manage the certificate lifestyle centrally
+
+Public and private certificates provisioned through AWS Certificate Manager for use with ACM-integrated services are free and you only pay for resources to run your app
+
+
+You pay montly for the operation of the private certificate authority (CA) and for the private certificates you issue
+
+## AWS CloudHSM
+
+A cloud-based hardware security modules that enables you to easily generate and use your own encryption keys on the AWS cloud
+
+You can manage your own encryption keys using dedicated FIPS 140-2 Level 3 validated HSMs
+
+CloudHSM offers you the flexibility to integrate with your applications using industry-standard APIs such as PKCS#11, Java Cryptogtaphy Extenstion (JCE), and Microsoft CryptoNG (CNG) libraries
+
+
+CloudHSM is standard-compliant and enables you to export all of your keys to most other commerically-avaliable HSMs, subject to your configurations. It is a fully managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-avaliabilty, and backups
+Also enables you to scale quickly by adding and removing HSM capacity on-demand, with no up-front costs
+
+## AWS Directory Service
+
+AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use managed Active Directory in AWS
+
+It is built on actual Microsoft Active Directory and does not require you to synchronize or replicate data from your existing Active Directory to the cloud
+
+You can use Active Directory administration tools and take advantage of built-in Active Directory features such as Group Policy and Single Sign-on (SSO)
+
+You can easily join EC2 and Amazon RDS for SQL server instances to a domain, and use AWS Enterprise IT applications such as Amazon WorkSpaces with Active Directory users and groups
+
+## AWS Firewall Manager
+
 
