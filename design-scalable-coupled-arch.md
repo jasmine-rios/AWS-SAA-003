@@ -11,7 +11,15 @@
 - Amazon Redshift - Data warehouse needs
 
 # Resilancy in Database
-- Amazon RDS uses read replica or multi-az design for resilence
+- Amazon RDS uses read replica or multi-az design for resilence but does not replace cache
+- DynamoDB uses Amazon DynamoDB Accelerator (DAX) as cache
+- DyanoDB, Amazon CloudFront, Amazon ElastiCache use cache
+- Edge networking services for resilance Cloudfront, Route 53, AWS Global Accelerator
+
+# Workloads
+- If you wanted a file share without dealing with maintance and design, you could use AWS Transfer Family
+- AWS Transfer Family gives you the ability to create and modify data transfer and data processing without maintaining code or infrastructure
+- AWS Transfer Family is backed to 3 AZs and backed by autoscaling
   
 # Severless
 
