@@ -40,5 +40,6 @@ Security Lake converts ingested data into Apache Parquet format and a standard o
 With OCSF support, Security Lake normalizes and combines security data from AWS and a broad range of enterprise security data sources.
 
 Amazon Verified Permissions
-
+A scalable, fine-grained permissions management and authorization service for custom applications you've built
+Allows dev to build secure apps faster by externalizing authorization and centralizing policy 
 
