@@ -1,0 +1,10 @@
+
+
+# Severless
+
+- **Compute**: AWS Lambda
+- **Containers**: AWS Fargate
+- **Application Integration**: Amazon SQS, Amazon SNS, Amazon EventBridge, AWS Step Functions, AWS AppSync
+- **Storage**: Amazon S3
+- **Database**: Amazon DynamoDB, Amazon RDS Proxy, Amazon Aurora Serverless 
+
