@@ -141,4 +141,15 @@ You can easily join EC2 and Amazon RDS for SQL server instances to a domain, and
 
 ## AWS Firewall Manager
 
+Allows you to centrally configure and manage firewall rules across your accounts and apps in AWS Organizations
+
+You use the single service to build firewall rules, create security policies, and enforce them in a consistant, hierarchical manner across your entire infrastructure, from a centeral administrator account
+
+## AWS IAM
+
+Control access to AWS services and resources for your AWS users, groups, and roles.
+
+## AWS Key Management Service
+
+
 
