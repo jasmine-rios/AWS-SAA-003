@@ -81,3 +81,32 @@ active/active
 - Mission Critical Services
 - Cost $$$$
 
+# Things to look into
+- RDS has multi-az deployment capability for fail tolerance for RTO of 35 seconds
+
+- Amazon Aurora database uses cross region failover and takes to failover?
+
+- Amazon DynamoDB uses global tables?
+
+- Back up and recovery options for RDS? Aurora, DyanamoDB?
+
+Image Builder for EC2?
+
+VPC Peering connections, AWS Transit Gateways, AWS site-to-site VPN, AWS Direct Connect, AWS Direct Connect Gateways, and Amazon Route 53 Resolver?
+
+Capabilities and downfalls? 
+Automate Deployments using services like Elastic Beanstalk, CloudFormation, and OpsWorks?
+
+For container deployments use ECS and EKS
+
+Use Amazon Inspector and Amazon CodeGuru to find vulnerabilities and scan code
+
+Failover to other side of the world? Know capabilities of Amazon Route 53 like failover routing
+
+Global Accelerator for app avaliability and performance
+
+RDS proxy for a fully managed, highly avaliable for making applications more scalable, more resilient to database failures, and more secure
+
+Serverless applications for a large number of open connections to the database server and may open and close db connections at a high rate and exhausting database memory and compute resources
+
+RDS Proxy allows you to pull and share connections established with the database to improve db efficency and application scalability
