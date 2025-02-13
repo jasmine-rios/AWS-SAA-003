@@ -110,3 +110,31 @@ RDS proxy for a fully managed, highly avaliable for making applications more sca
 Serverless applications for a large number of open connections to the database server and may open and close db connections at a high rate and exhausting database memory and compute resources
 
 RDS Proxy allows you to pull and share connections established with the database to improve db efficency and application scalability
+
+
+Know how to use AWS CloudWatch and AWS X-ray to know what is happening on your systems
+
+Know how to respond in realtime to changes in your environment using EventBridge
+
+Amazon Polly can have fault tolerance and high avaliability if you have a large volume of IT service requests 
+
+Use Amazon Comprehend to catergorize tickets automatically so they aren't dropped becuase it isn't assigned properly
+
+Amazon Polly can be added to add spoken output to your system and create self-service within Amazon Conenct contact center services
+
+Know AWS Lambda, AWS Fargate, and Amazon SQS capabilities and their appropriate use cases
+
+There is intergretion between ECS and EFS for a completely elastic managed file system avaliable to containers
+This file system can be seen as serverless and compliments containers
+
+# Additional Resources
+
+- (What is Elastic Disaster Recovery?)[https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html]
+- (Edge networking with AWS)[https://aws.amazon.com/products/networking/edge-networking/]
+- (What is AWS Transfer Family?)[https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html]
+- (Fault tolerance and fault isolation)[https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/fault-tolerance-and-fault-isolation.html]
+- (What is Amazon API Gateway?)[https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html]
+- (High Performance Computing Lens Scenarios)[https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/scenarios.html]
+- (Amazon RDS Proxy for Aurora)[https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy.html]
+- (Connect your VPC to other networks)[https://docs.aws.amazon.com/vpc/latest/userguide/extend-intro.html]
+  
