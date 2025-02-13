@@ -90,42 +90,42 @@ active/active
 
 - Back up and recovery options for RDS? Aurora, DyanamoDB?
 
-Image Builder for EC2?
+- Image Builder for EC2?
 
-VPC Peering connections, AWS Transit Gateways, AWS site-to-site VPN, AWS Direct Connect, AWS Direct Connect Gateways, and Amazon Route 53 Resolver?
+- VPC Peering connections, AWS Transit Gateways, AWS site-to-site VPN, AWS Direct Connect, AWS Direct Connect Gateways, and Amazon Route 53 Resolver?
 
-Capabilities and downfalls? 
-Automate Deployments using services like Elastic Beanstalk, CloudFormation, and OpsWorks?
+- Capabilities and downfalls? 
 
-For container deployments use ECS and EKS
+- Automate Deployments using services like Elastic Beanstalk, CloudFormation, and OpsWorks?
 
-Use Amazon Inspector and Amazon CodeGuru to find vulnerabilities and scan code
+- For container deployments use ECS and EKS
 
-Failover to other side of the world? Know capabilities of Amazon Route 53 like failover routing
+- Use Amazon Inspector and Amazon CodeGuru to find vulnerabilities and scan code
 
-Global Accelerator for app avaliability and performance
+- Failover to other side of the world? Know capabilities of Amazon Route 53 like failover routing
 
-RDS proxy for a fully managed, highly avaliable for making applications more scalable, more resilient to database failures, and more secure
+- Global Accelerator for app avaliability and performance
 
-Serverless applications for a large number of open connections to the database server and may open and close db connections at a high rate and exhausting database memory and compute resources
+- RDS proxy for a fully managed, highly avaliable for making applications more scalable, more resilient to database failures, and more secure
 
-RDS Proxy allows you to pull and share connections established with the database to improve db efficency and application scalability
+- Serverless applications for a large number of open connections to the database server and may open and close db connections at a high rate and exhausting database memory and compute resources
 
+- RDS Proxy allows you to pull and share connections established with the database to improve db efficency and application scalability
 
-Know how to use AWS CloudWatch and AWS X-ray to know what is happening on your systems
+- Know how to use AWS CloudWatch and AWS X-ray to know what is happening on your systems
 
-Know how to respond in realtime to changes in your environment using EventBridge
+- Know how to respond in realtime to changes in your environment using EventBridge
 
-Amazon Polly can have fault tolerance and high avaliability if you have a large volume of IT service requests 
+- Amazon Polly can have fault tolerance and high avaliability if you have a large volume of IT service requests 
 
-Use Amazon Comprehend to catergorize tickets automatically so they aren't dropped becuase it isn't assigned properly
+- Use Amazon Comprehend to catergorize tickets automatically so they aren't dropped becuase it isn't assigned properly
 
-Amazon Polly can be added to add spoken output to your system and create self-service within Amazon Conenct contact center services
+- Amazon Polly can be added to add spoken output to your system and create self-service within Amazon Conenct contact center services
 
-Know AWS Lambda, AWS Fargate, and Amazon SQS capabilities and their appropriate use cases
+- Know AWS Lambda, AWS Fargate, and Amazon SQS capabilities and their appropriate use cases
 
-There is intergretion between ECS and EFS for a completely elastic managed file system avaliable to containers
-This file system can be seen as serverless and compliments containers
+- There is intergretion between ECS and EFS for a completely elastic managed file system avaliable to containers
+- This file system can be seen as serverless and compliments containers
 
 # Additional Resources
 
