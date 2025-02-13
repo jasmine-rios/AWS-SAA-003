@@ -39,3 +39,45 @@
 - Amazon EventBridge 
 - Amazon DynamoDB
 
+# Disaster recovery strategies
+
+active/passive:
+
+- Backup & Restore
+- Pilot Light
+- Warm Standby
+
+active/active
+
+- Multi-site active/active
+
+## Backup and Restore
+
+- RPO/RTO: Hours
+- Lower priority
+- Provision all AWS resources after event
+- Restore backups after event
+- Cost: $
+
+## Pilot Light
+
+- RPO/RTO: 10s of minutes
+- data live
+- Provision some AWS resources and scale after event
+- Cost: $$
+
+## Warm Standby
+
+- RPO/RTO: Minutes
+- Always running, but smaller
+- Business Critical
+- Scale AWS resources after event
+- Cost $$$
+
+## Multi-Site active/active
+
+- Zero downtime
+- Near zero data loss
+- Mission Critical Services
+- Cost $$$$
+
