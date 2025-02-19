@@ -84,4 +84,48 @@ EBS snapshots for EBS for backup and disaster recovery and stored in S3 and beco
 
 ## Design high-preforming and elastic compute solutions
 
+Just because a service is hosted on AWS doesn't mean that it is scalable by default, depends on your design
+
+### Compute areas
+
+- Instances (EC2)
+- Containers (ECS and EKS)
+- Functions (Lambda)
+
+#### Containers
+
+EKS allows AWS-powered kubernetes to run on EC2 instances
+
+ECS has two types: fargate and EC2 instance
+
+Fargate serverless compute for containers and EC2 can be used to control the installation, configuration, and management of your compute environment
+
+Learn how to intergrate other services with your containers such as application load balancers for port mapping 
+
+Understand functions how to extract the execution environment from the code you want to run
+
+Lambda accepts functions with a small piece of code written in a language
+
+Lambda uses a runtime such as Python, Java, NodeJS, etc and starts the code without running an EC2 instance
+
+You are billed for execution time of functions and functions are invoked based on event
+
+Lambda functions have a 15-minute execution limit; use Step Functions for anything longer
+
+You can use lambda with Cloudfront to run Lamabda globally by deploying functions to all Cloudfront edge locations
+
+#### Domain 3.2 Focus areas
+Know how to decouple workloads so components can scale independently
+
+Identify metrics and conditions to perform scaling actions
+
+Select the appropiate compute options and features (for example, EC2 instance types) to meet business requirements
+
+Select the appropriate resource type and size (for example, the amount of lambda memory) to meet buisness requirements
+
+
+
+
+
+
 
