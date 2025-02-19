@@ -176,6 +176,6 @@ Amazon EC2 instance types:
     provide a baseline level of CPU performance with the ability to burst above the baseline
     general-purpose workloads such as web servers and small databases
     T3.medium: 2 vCPUs, 4 GiB memory, EBS-only storage
-- 
-- 
+  
+  
 
