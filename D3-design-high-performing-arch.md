@@ -114,7 +114,8 @@ Lambda functions have a 15-minute execution limit; use Step Functions for anythi
 
 You can use lambda with Cloudfront to run Lamabda globally by deploying functions to all Cloudfront edge locations
 
-#### Domain 3.2 Focus areas
+### Domain 3.2 Focus areas
+
 Know how to decouple workloads so components can scale independently
 
 Identify metrics and conditions to perform scaling actions
@@ -123,9 +124,58 @@ Select the appropiate compute options and features (for example, EC2 instance ty
 
 Select the appropriate resource type and size (for example, the amount of lambda memory) to meet buisness requirements
 
+Services:
 
+- Amazon Simple Quenue Service (Amazon SQS)
+- Amazon Simple Notification Service (Amazon SNS)
+- Amazon Cloudwatch
+- Elastic Load Balancer
+- Amazon Elastic Compute Cloud (Amazon EC2)
+- AWS Lambda
 
+### To knows 
 
+There are useful metrics that are not automatically tracked by Cloudwatch such as amount of memory used by EC2
 
+You can use custom metrics for scaling or metrics related to elastic load balancing like HealthyHostCount and your SurgeQuenueLength 
 
+Lambda is scalable automatically but EC2 is not inheritly scalable by default
+
+Amazon EC2 instance types:
+
+- General Purpose Instances
+    Balance of compute, memory, and networking resources;
+    use cases for web servers and code repositories;
+    ex M8g.medium: 1 vCPU, 4 GiB memory, EBS-only storage, up to 12.5 Gbps network bandwidth)
+  
+- Compute Optimized Instances
+    compute-bound applications that benefit from high-performance processors;
+    use cases for batch processing, media transcoding, and high-performance web servers;
+    C8g.medium: 1 vCPU, 2 GiB memory, EBS-only storage, up to 12.5 Gbps network bandwidth
+  
+- Memory Optimized Instances
+    deliver fast performance for workloads that process large data sets in memory;
+    open-source databases and real-time big data analytics;
+    R8g.medium: 1 vCPU, 8 GiB memory, EBS-only storage, up to 12.5 Gbps network bandwidth
+  
+- Storage Optimized Instances
+    for workloads that require high, sequential read and write access to very large data sets on local storage;
+    They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS);
+    I4g.large: 2 vCPU, 16 GiB memory, 1 x 468 GB NVMe SSD, up to 10 Gbps network bandwidth
+
+- Accelerated Computing Instances
+    use hardware accelerators, or co-processors, to perform functions such as floating-point number calculations, graphics processing, or data pattern matching more efficiently than software running on CPUs;
+  P5.48xlarge: 8 NVIDIA H100 GPUs, 192 vCPUs, 2 TiB memory, 8 x 3.84 TB NVMe SSD, 3200 Gbps network bandwidth
+  
+- High-Performance Computing (HPC) Instances
+    Purpose-built to offer the best price performance for running HPC workloads at scale on AWS;
+    Ideal for large, complex simulations and deep learning workloads
+    Hpc7g.4xlarge: 16 physical cores, 128 GiB memory, EBS-only storage, 200 Gbps EFA network bandwidth
+
+- Burstable Performance Instances
+    provide a baseline level of CPU performance with the ability to burst above the baseline
+    general-purpose workloads such as web servers and small databases
+    T3.medium: 2 vCPUs, 4 GiB memory, EBS-only storage
+- 
+- 
 
