@@ -213,3 +213,7 @@ Services:
 - Amazon DynamoDB
 - Amazon Relational Database Service (Amazon RDS)
 - Amazon ElastiCache
+
+The database you choose has potential to accelerate your performance
+
+A lot of db are chosen due to business decision rather than through a data-driven approach
