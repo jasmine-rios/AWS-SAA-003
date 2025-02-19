@@ -189,6 +189,27 @@ Amazon EC2 instance types:
   - Time Series
   - Ledger Databases
     
+You don't have to worry about provisioning and mantaining servers
 
-  
+AWS continously monitors your clusters to keep your workloads up and running
 
+Has self-healing storage and automated scaling
+
+Database you choose is based on availability, consistency, partition tolerance, latency, durability, scalability, and query capability
+
+Many systems use different databases for subsystems
+
+### Domian 3.3 Focus Areas
+
+- Design database architectures
+- Determine an appropriate database engine
+- Determine an appropriate database type
+- Integrate caching to meet buisness requirements
+- Configure read replicas to meet business requirements
+
+Services:
+- Amazon Redshift
+- Amazon Aurora
+- Amazon DynamoDB
+- Amazon Relational Database Service (Amazon RDS)
+- Amazon ElastiCache
