@@ -216,4 +216,57 @@ Services:
 
 The database you choose has potential to accelerate your performance
 
-A lot of db are chosen due to business decision rather than through a data-driven approach
+A lot of db are chosen due to organizational defaults rather than through a data-driven approach
+
+Know use cases, how these services work and operate instead knowing the databases
+
+How do you maximize the performance of your relational databases?
+
+What if traffic was mostly fromr read operations on the database?
+Read replicas for RDS
+
+Understand the purpose of read replicas compared to multi-AZ deployments
+
+- Aurora clusters and data replication
+- Database solutions
+- Capacity planning
+
+### Relational Databases
+Amazon RDS has RDS proxy instance
+
+Amazon Aurora clusters and data replication work
+
+The cluster is made up of a single primary instance and zero or more read replicas
+
+Provide the benefits of reads and multi-az to improve avaliability and read operations on your cluster
+### Aurora vs RDS
+
+Aurora is part of the RDS family but does have a few differences and improvements over RDS
+
+The Aurora architecture is very different from RDS and uses base arch of a cluster
+
+Aurora storage is different than RDS because Aurora does not use the local storage for compute
+
+Instead it uses a shred cluster volume for faster provisioning and improved avaliability and better performance
+
+If you need conistant single-digit millisecond performance and extremely high volumes what do you choose? Amazon Aurora or DynamoDB?
+
+### DynamoDB 
+
+DynamoDB is known for consistent response times in the single milliseconds regardless of loading and without tuning effort
+
+DynamoDB's data is replicated across multiple storage nodes by default and it is fast and backed by SSD
+
+DynamoDB provides backups, point-in-time recovery, encryption at rest, and can support event-driven integration to take actions if your table changes
+
+### Other
+
+AWS New Release Amazon RDS for SQL Server now supports Cross Region Read Replica
+
+
+Amazon DynamoDB uses Amazon DynamoDB Accelerator (DAX)
+
+### Other Database Types
+
+Amazon ElastiCache uses ElastiCache for Memcached and ElastiCache for Redis
+
