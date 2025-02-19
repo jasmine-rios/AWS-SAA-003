@@ -177,5 +177,18 @@ Amazon EC2 instance types:
     general-purpose workloads such as web servers and small databases
     T3.medium: 2 vCPUs, 4 GiB memory, EBS-only storage
   
+  ## Determine High-Performing Database Solutions 3.3
+
+  You can choose from multiple purpose-driven database solutions
+
+  - Relational
+  - Key Value
+  - Document
+  - In-memory
+  - Graph
+  - Time Series
+  - Ledger Databases
+    
+
   
 
