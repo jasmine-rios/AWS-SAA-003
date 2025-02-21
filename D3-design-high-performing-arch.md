@@ -1,6 +1,4 @@
-# design-high-performing-arch.md
-
-## Determine high-performing and elastic compute solutions
+# Determine high-performing and elastic compute solutions
 
 Four layers
 
@@ -12,7 +10,7 @@ Four layers
   
 - Network
 
-### Storage forms
+## Storage forms
 
 - Block (EBS)
   
@@ -26,7 +24,7 @@ EBS scaling is manual but supports live configuration changes when in prod
 
 EFS scaling vertically is done automatcially as you add and remove files (Least amount of operational work)
 
-### File storage to know
+## File storage to know
 
 AWS Storage Gateway- Help you move files to EFS from on-premises for hybrid storage solutions
 
@@ -35,7 +33,7 @@ It is a fully-managed Windows file system share drive, supports SMB and NTFS, an
 
 EFS is great for large repositories, development enivornment, media storage, and more
 
-#### Key words for EFS
+### Key words for EFS
 
 - network-based file systems
 - NFS
@@ -44,13 +42,11 @@ EFS is great for large repositories, development enivornment, media storage, and
 
 Configuration of EFS for performance - General Purpose and Max IO 
 
-#### Cost optimization lifestyle policies
+### Cost optimization lifestyle policies
 
 Data isn't static, once you operate your applications over time the rate of data accumilation should be considered when making arch decisions ( 1 TB this year 10 T next year
 
-
-
-### Object storage to know
+## Object storage to know
 
 - S3 storage classes
 - Basic API calls
@@ -66,7 +62,7 @@ Your S3 data is stored in a region and is replicated for Avaliabilty Zone fault 
 
 For data upload or transfers, you can improve the performance in S3 with S3 Accelerator for more performant uploads and caching with Cloufront
 
-### Block Storage to know
+## Block Storage to know
 
 Know EBS volume types their performance, use cases, and IOPS 
 
@@ -76,23 +72,23 @@ EC2 has two storage: instant store (local store and ephemeral) and EBS volumes (
 
 EBS snapshots for EBS for backup and disaster recovery and stored in S3 and becomes region resilient 
 
-#### Key words for EBS:
+### Key words for EBS:
 
 - DAS
 - SAN 
 - Perisistant Storage for EC2 
 
-## Design high-preforming and elastic compute solutions
+# Design high-preforming and elastic compute solutions
 
 Just because a service is hosted on AWS doesn't mean that it is scalable by default, depends on your design
 
-### Compute areas
+## Compute areas
 
 - Instances (EC2)
 - Containers (ECS and EKS)
 - Functions (Lambda)
 
-#### Containers
+### Containers
 
 EKS allows AWS-powered kubernetes to run on EC2 instances
 
@@ -114,7 +110,7 @@ Lambda functions have a 15-minute execution limit; use Step Functions for anythi
 
 You can use lambda with Cloudfront to run Lamabda globally by deploying functions to all Cloudfront edge locations
 
-### Domain 3.2 Focus areas
+## Domain 3.2 Focus areas
 
 Know how to decouple workloads so components can scale independently
 
@@ -133,7 +129,7 @@ Services:
 - Amazon Elastic Compute Cloud (Amazon EC2)
 - AWS Lambda
 
-### To knows 
+## To knows 
 
 There are useful metrics that are not automatically tracked by Cloudwatch such as amount of memory used by EC2
 
@@ -199,7 +195,7 @@ Database you choose is based on availability, consistency, partition tolerance, 
 
 Many systems use different databases for subsystems
 
-### Domian 3.3 Focus Areas
+## Domian 3.3 Focus Areas
 
 - Design database architectures
 - Determine an appropriate database engine
@@ -231,7 +227,7 @@ Understand the purpose of read replicas compared to multi-AZ deployments
 - Database solutions
 - Capacity planning
 
-### Relational Databases
+## Relational Databases
 Amazon RDS has RDS proxy instance
 
 Amazon Aurora clusters and data replication work
@@ -250,7 +246,7 @@ RDS instance auto-scaling?
 
 Storage autoscaling for an RDS instance; yes but auto scaling doesn't occur if max storage threshold would be equal to or exceeded by the storage increment
 
-### Aurora vs RDS
+## Aurora vs RDS
 
 Aurora is part of the RDS family but does have a few differences and improvements over RDS
 
@@ -267,7 +263,7 @@ AWS New Release Amazon RDS for SQL Server now supports Cross Region Read Replica
 Before Amazon RDS was only regional and Aurora could cross regions due to it having Aurora Global Database that can span multiple regions
 
 
-### DynamoDB 
+## DynamoDB 
 
 DynamoDB is known for consistent response times in the single milliseconds regardless of loading and without tuning effort
 
@@ -277,11 +273,11 @@ DynamoDB provides backups, point-in-time recovery, encryption at rest, and can s
 
 Amazon DynamoDB uses Amazon DynamoDB Accelerator (DAX) and adds access to data in milliseconds and has two caches: item and query
 
-### Amazon ElastiCache
+## Amazon ElastiCache
 
 Amazon ElastiCache is an in-memory database for two caching engines: Memcached and = Redis
 
-### Aurora Severless
+## Aurora Severless
 
 Aurora Serverless is an on-demand auto-scaling configuration for Aurora that scales compute capacity up and down
 
@@ -295,9 +291,9 @@ We choose min ACU and max ACU and then Aurora Serverless cluster will scale betw
 
 The ACU can go down to zero and paused after a period of inactivity for cost savings
 
-## 3.4 Determine high-performing and/or scalable network architectures
+# 3.4 Determine high-performing and/or scalable network architectures
 
-### Networking
+## Networking
 
 - Fundamentals
 - Services and features
@@ -360,7 +356,50 @@ Geoproximity routing policies on Route 53 for serving content as physically clos
 
 Learn functionality of Route 53, how to develop solutions using it, and record types to create
 
-### Global Accelerator
+### Improve Network
 
 Global Accelerator can improve your application's network peformance
-Cloudfront 
+
+AWS edge locations allows you to cache assets closer to your end users using the CloudFront service
+
+Learn how Cloudfront works, use cases, and benefits of using it
+
+## Migration
+
+Services:
+- AWS Application Discovery Service
+- AWS Transfer Family
+- AWS DataSync
+- AWS Migration Hub
+- AWS Server Migration Service (AWS SMS)
+- CloudEndure Migration
+- AWS Migration Evaluator
+- AWS Snow Family:
+  - AWS Snowball Edge
+  - AWS Snowmobile
+  - AWS Snowball
+  - AWS Snowcone
+
+## Load Balancer
+
+- Application Load balancer (layer 7 appplication)
+- Network Load Balancer (Layer 4 Network)
+- Gateway Load Balancer (Layer 5 Transportation)
+
+# 3.5 Determine high-performing data ingestion and transformation solutions
+
+AWS Data ingestion is a proces of getting data so collecting, curating, and preparing data from the source system to AWS for storage, data lakes, ML, etc
+
+## Data Ingestion Patterns
+
+There are two types:
+
+- Homogeneous (move source data to destination in the same format or same storage engine as the source)
+- Heterogenous (move source data to destination in a )
+
+### Homogeneous
+
+Amazon EMR
+Amazon Athena
+Amazon Relational Database Service (Amazon RDS)
+Amazon Simple Storage Solution (Amazon S3)
