@@ -239,6 +239,17 @@ Amazon Aurora clusters and data replication work
 The cluster is made up of a single primary instance and zero or more read replicas
 
 Provide the benefits of reads and multi-az to improve avaliability and read operations on your cluster
+
+If you were running a lambda as your compute that open many different connections to your RDS instance
+
+Use RDS Proxy to manage connections more efficiently because it maintains a pool of established connections to your RDS instance
+
+Thew RDS Proxy reduces stress on your compute and memory resources and supports a large number and frequency of connections for app to scale
+
+RDS instance auto-scaling?
+
+Storage autoscaling for an RDS instance; yes but auto scaling doesn't occur if max storage threshold would be equal to or exceeded by the storage increment
+
 ### Aurora vs RDS
 
 Aurora is part of the RDS family but does have a few differences and improvements over RDS
@@ -251,6 +262,11 @@ Instead it uses a shred cluster volume for faster provisioning and improved aval
 
 If you need conistant single-digit millisecond performance and extremely high volumes what do you choose? Amazon Aurora or DynamoDB?
 
+AWS New Release Amazon RDS for SQL Server now supports Cross Region Read Replica
+
+Before Amazon RDS was only regional and Aurora could cross regions due to it having Aurora Global Database that can span multiple regions
+
+
 ### DynamoDB 
 
 DynamoDB is known for consistent response times in the single milliseconds regardless of loading and without tuning effort
@@ -259,14 +275,92 @@ DynamoDB's data is replicated across multiple storage nodes by default and it is
 
 DynamoDB provides backups, point-in-time recovery, encryption at rest, and can support event-driven integration to take actions if your table changes
 
-### Other
+Amazon DynamoDB uses Amazon DynamoDB Accelerator (DAX) and adds access to data in milliseconds and has two caches: item and query
 
-AWS New Release Amazon RDS for SQL Server now supports Cross Region Read Replica
+### Amazon ElastiCache
 
+Amazon ElastiCache is an in-memory database for two caching engines: Memcached and = Redis
 
-Amazon DynamoDB uses Amazon DynamoDB Accelerator (DAX)
+### Aurora Severless
 
-### Other Database Types
+Aurora Serverless is an on-demand auto-scaling configuration for Aurora that scales compute capacity up and down
 
-Amazon ElastiCache uses ElastiCache for Memcached and ElastiCache for Redis
+Aurora serverless provides a version of the Aurora database product where you do not provision/manage the db instance and is arch differently
 
+Aurora Serverless provides the same shared cluster storage so six copies of your data is across three avaliabilty zones but cluster provisioning is different
+
+ACUs or Aurora Capacity Units provide a certain amount of compute and a corresponding amount of memory
+
+We choose min ACU and max ACU and then Aurora Serverless cluster will scale between those based on load
+
+The ACU can go down to zero and paused after a period of inactivity for cost savings
+
+## 3.4 Determine high-performing and/or scalable network architectures
+
+### Networking
+
+- Fundamentals
+- Services and features
+- Backup and restore services
+- Metrics and IaC
+
+Services
+- Amazon Virtual Private Cloud (VPC)
+- Endpoints
+- AWS Global Acceleratir
+- Amazon Route 53
+- Amazon CloudFront
+- AWS Direct Connect
+
+### Amazon VPC
+
+What components are needed for your VPC? This is a possible build order of VPC
+
+- VPC
+- Subnets
+- Route Tables
+- Internet Gateway
+- Network Access Control lists
+- Security Groups
+- Customizing the VPC by adding resources
+- Update Security Groups
+- Add NAT gateway if needed
+- Peer to another VPC
+- Create Endpoints
+
+### VPN connections vs. Direct Connect
+
+You can set up VPN easiest than Direct Connect but traffic goes through internet to connected network
+
+Direct Connect keeps the traffic on AWS backbone 
+
+### Transit Gateway
+
+Can be used with either VPN or Direct Connect to connect multiple VPCs to a remote network
+
+Learn how it works, use cases, and how it can simplify network peering solutions
+
+### AWS CloudHub
+
+Helps you create a hub and spoke model for connecting networks 
+
+### Endpoint Services
+
+PrivateLink to share out VPC without VPC peering overhead
+
+VPC endpoints
+
+Gateway endpoints are used for AWS public services and sit inside the AWS public zone
+
+You would use gateway endpoints to connect with S3 or DynamoDB from a private instance or subnet that doesn't have internet access with no NAT gateway
+
+### Route 53 Routing Policies
+
+Geoproximity routing policies on Route 53 for serving content as physically close to users as possible 
+
+Learn functionality of Route 53, how to develop solutions using it, and record types to create
+
+### Global Accelerator
+
+Global Accelerator can improve your application's network peformance
+Cloudfront 
