@@ -394,12 +394,44 @@ AWS Data ingestion is a proces of getting data so collecting, curating, and prep
 
 There are two types:
 
-- Homogeneous (move source data to destination in the same format or same storage engine as the source)
-- Heterogenous (move source data to destination in a )
-
+- Homogeneous (moving source data to destination in different format and requires ETL) 
+- Heterogenous (move source data to destination in the same format or same storage engine as the source)
+  
 ### Homogeneous
 
-Amazon EMR
-Amazon Athena
-Amazon Relational Database Service (Amazon RDS)
-Amazon Simple Storage Solution (Amazon S3)
+- Amazon EMR
+- Amazon Athena
+- Amazon Relational Database Service (Amazon RDS)
+- Amazon Simple Storage Solution (Amazon S3)
+
+### Heterogeneous
+
+- Amazon Redshift
+- Amazon Relational Database Service (Amazon RDS)
+- Amazon Kinesis
+- AWS Glue
+- Amazon Simple Storage Solution (Amazon S3)
+
+## Kinesis
+
+For streaming data use Amazon Kinesis and Amazon Managed Streaming for Apache Kafka;
+
+Amazon Kinesis has the capabilities to provide the collection, processing, and analysis of data in real time
+
+Also provides ingestion of streaming data
+
+Producers of data push data directly into the stream which consists of a group of stored data units called records
+
+The stored data is avaliable for further processing or storage as part of the data pipeline
+
+Ingestion of streaming videos can be done using Kinesis video streams 
+
+Understand the kinesis family to know which service to use for a specific scenario or use case
+
+Why would you choose Kinesis data streams instead of Kinesis Data Fire Hose?
+
+- Data Streams is the real time data streaming service in Kinesis with high scalability and durability
+  It can help in continuous capturing multiple gigabytes of data every second from multiple sources
+  
+- Data Fire Hose provides a facility of loading data streams into AWS data stores
+  Kinesis Data Fire Hose provides the simplest approach for capturing, transforming, and loading data streams 
