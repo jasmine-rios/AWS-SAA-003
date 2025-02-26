@@ -434,4 +434,28 @@ Why would you choose Kinesis data streams instead of Kinesis Data Fire Hose?
   It can help in continuous capturing multiple gigabytes of data every second from multiple sources
   
 - Data Fire Hose provides a facility of loading data streams into AWS data stores
-  Kinesis Data Fire Hose provides the simplest approach for capturing, transforming, and loading data streams 
+  Kinesis Data Fire Hose provides the simplest approach for capturing, transforming, and loading data streams into AWS data stores
+
+Which Kinesis solutions includes basic data transformation options?
+  - Kinesis data analytics
+
+## Data Transformation
+
+- Amazon EMR
+- AWS Glue
+- Amazon Simple Storage Service (Amazon S3)
+- Data lake
+- Lambda Function
+
+Once the data is extracted, it needs to be transformed and loaded into a data store for feeding into a machine learning model
+
+It also needs to be cataloged and organized so that it's available for consumption
+
+What services can we use to optimize Processsing? Amazon EMR, AWS Glue, AWS Lake Formation?
+- If your data is stored in S3, you could choose to use Amazon EMR or AWS Glue 
+- If you have large jobs, there are best practices to optimize data access from EMR and Glue to S3.
+  Remember S3 can scale horizontally and with EMR and Glue, you can process data in a highly distributed way at a massive scale
+  Depending on your design, you may need to adjust the number of concurrent S3 requests, modify retry strategy for S3 request, or adjust the number of S3 objects    processed  
+
+What are the ways to optimize your data ingestion and transformation? 
+- If you bill your data lake on S3 using EMR clusters you can transform your data assets to Parquet or use Lambda functions to transfer your data in a data lake built on S3 
