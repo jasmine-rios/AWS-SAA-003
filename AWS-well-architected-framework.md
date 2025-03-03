@@ -257,9 +257,45 @@ Detection Best Practices:
 
 ## Infrastructure Protection
 
+Uses control methodology such as defense in depth, that are necessary to meet best practices and organizational or regulatory obligations
+
+Use of these methodologies is critical for successful ongoing operations in the cloud
+
+Infrastructure protection is a key part of an information security program 
+
+It helps ensure that systems and services in your workload are protected against unintended and unauthorized access and potential vulnerabilities
+
 ### Protecting Networks
 
+Users, both in your workforce and your customers, can be located anywhere
+
+You need to pivot from traditional models of trusting anyone and employ a Zero Trust approach
+
+Zero trust security is a model where application components or microservices are considered discrete from each other and nothing trusts any other
+
+Best practices for protecting networks:
+
+- Create network layers
+- Control traffic at all layers
+- Automate network protection
+- Implement inspection and protection
+
 ### Protecting compute
+
+Compute resources include EC2 instances, containers, lambda functions, database services, Internet of Things, and more
+
+Each resources requires different approaches to secure them
+
+
+
+Best practices for protecting compute:
+
+- Perform vulnerability management
+- Reduce attack surface
+- Implement managed services
+- Automate compute protection
+- Help people perform actions at a distance
+- Validate software integrity
 
 ## Data Protection
 
