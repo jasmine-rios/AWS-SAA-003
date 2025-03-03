@@ -142,7 +142,41 @@ Alert when operations are at risk. If at risk, an alert must be raised and acted
 If alert is raised, a reference to cooresponding runbook or playbook should be included. Alerts without action can lead to alert fatigue.
 
 
+# Deep Dive on the Security Pillar
 
+What is the Security Pillar?
+
+The security pillar encompasses the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security
+
+## Security Design Prinicples
+
+- Implement a strong identity foundation
+- Turn on traceability
+- Apply security at all layers
+- Automate security best practices
+- Protect data in transit and at rest
+- Keep people away from data
+- Prepare for security events
+
+## Security Best Practices Areas
+
+- Security Foundations
+- Identity and access management
+- Detection
+- Infrastructure protection
+- Data protection
+- Incident response
+- Application security
+
+### Security Foundations
+
+Shared model is used to delinate customer and AWS responsibility in cloud
+
+Customer in charge of guest os and firewall rules
+
+customer = Responsible for Security 'in' the cloud
+
+AWS = Responsible for Security 'OF' the cloud
 
 
 
