@@ -194,7 +194,7 @@ Steps to prevent inadvertent exposure of root credentials and subsequent comprom
 2. Establish appropriate controls for the root user
 3. Avoid routine use of the root user
 
-## Operating Your Workloads Securely
+#### Operating Your Workloads Securely
 
 - Identify and validate control objectives
 - Keep up to date with security threats
@@ -203,9 +203,48 @@ Steps to prevent inadvertent exposure of root credentials and subsequent comprom
 - Identify threats and prioritize mitigations using a threat model
 - Evaluate and implement new security services and features regularly
 
-- 
+### Identity and Access Management
 
+Two typs of IAM:
 
+- Identity Management
+- Permissions Management
+
+#### Identity Management
+
+There are two idenities you must manage:
+
+- Human Identities
+- Machine Identities
+
+Best practices for identity management:
+
+- Use strong sign-in mechanisms
+- Employ temporary credentials
+- Store and use secrets securely
+- Reply on a centeralized identity provider
+- Audit and rotate credentials periodically
+- Set up user groups and attributes
+
+#### Permissions Management
+
+Manage permissions to control access to human and machine idenities that require access to AWS and your workloads
+
+Permissions control who can access what and when
+
+Set permissions to specific human and machine identities
+
+Best Practices for Permissions Management
+
+- Define access requirements
+- Grant least privilege access
+- Establish emergency access processs
+- Reduce permissions continuously
+- Define permission guardrails for your organization
+- Manage access based on lifecycle
+- Analyze public and cross-account access
+- Share resources securely in your organization
+- Share resources securely with a third party
 
 
 
