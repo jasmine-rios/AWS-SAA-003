@@ -286,7 +286,7 @@ Compute resources include EC2 instances, containers, lambda functions, database 
 
 Each resources requires different approaches to secure them
 
-
+Common strategies to consider for all of them: Defense in depth, vulnerability management, reduction in attack surface, and operation and performing actions at a distance
 
 Best practices for protecting compute:
 
@@ -299,7 +299,28 @@ Best practices for protecting compute:
 
 ## Data Protection
 
+Before architecting any workload, practicces that influence security should be in place
+
+For example, data classification provides a way to categorize data based on levels of sensitivity
+
+Encryption protects data by rendering it unintelligible to unauthorized access
+
+These methods are important because they support objectives such as limiting mishandling or helping comply with regulatory obligations 
+
+With AWS, there are a number of different approaches you can use when addressing data protection
+ 
 ### Classify data
+
+Data classification provides a way to categorize organizational data based on criticality and sensitivity
+
+This can help you determine appropriate protection 
+
+Best Practices for classifying data:
+
+- Identify data in your workload
+- Define data protection controls
+- Automate identification and classification
+- Define data lifecycle management
 
 ### Protecting Data At Rest
 
