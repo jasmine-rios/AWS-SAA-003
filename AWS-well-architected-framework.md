@@ -246,7 +246,34 @@ Best Practices for Permissions Management
 - Share resources securely in your organization
 - Share resources securely with a third party
 
+## Detection
 
+Detection Best Practices:
+
+- Configure service and application logging
+- Analyze logs, findings, and metrics centrally
+- Automate response to events
+- Implement actionable security events
+
+## Infrastructure Protection
+
+### Protecting Networks
+
+### Protecting compute
+
+## Data Protection
+
+### Classify data
+
+### Protecting Data At Rest
+
+### Protecting Data in Transit
+
+## Incident Response
+
+### Design goals of cloud response
+
+## Educate 
 
 
 
