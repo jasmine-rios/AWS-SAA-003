@@ -178,7 +178,32 @@ customer = Responsible for Security 'in' the cloud
 
 AWS = Responsible for Security 'OF' the cloud
 
+Customer choose encryption and 
 
+Manage seperate workloads in individual accounts and group accounts in AWS
+
+Secure account root user and properties
+
+AWS accounts are hard boundaries and account-level permissions is recommended because it provides a strong isolation boundary for security, billing, and access
+
+Root account might not be able to be secured with security policies sometimes
+
+Steps to prevent inadvertent exposure of root credentials and subsequent compromise of the cloud environment:
+
+1. Deactivate programmatic access to the root user
+2. Establish appropriate controls for the root user
+3. Avoid routine use of the root user
+
+## Operating Your Workloads Securely
+
+- Identify and validate control objectives
+- Keep up to date with security threats
+- Stay current on security recommendations
+- Automate testing and validation of security controls in pipelines
+- Identify threats and prioritize mitigations using a threat model
+- Evaluate and implement new security services and features regularly
+
+- 
 
 
 
