@@ -359,11 +359,37 @@ Best Practices for protecting data in transit
 
 ## Incident Response
 
+Even with extremely mature preventive and detective controls, your organization should still put processes in place to respond to and mitigate the potential impact of security incidents
+
+The architecture of your workload strongly affects the ability of your teams to operate effectively during an incident to isolate or contain systems and restore operations to a known good state
+
 ### Design goals of cloud response
+
+The general processes and mechanisms of incident response, such as those defined in the NIST SP 800-61 Computer Security Incident Handling Guide, are important
+
+- Establish response objectives
+- Document plans
+- Respond using the cloud
+- Know what you have and what you need
+- Use redeployment mechanisms
+- Automate where possible
+- Choose scalable solutions
+- Learn and improve your process
+  
 
 ## Educate 
 
+Automated processes help organizations spend more time focusing on measures to increase the security of their workloads
 
+Automated incident response also makes humans avaliable to correlate events, practice simulations, devise new response procedures, perform research, develop new skills, and test or build new tools
 
+Desite increased automation your team, specialists, and responders in a security organization still require continuous education
 
+It is helpful to review and incorporate the following areas when thinking about educating your security teams:
+
+- Development skills
+- AWS services
+- Application awareness
+
+## Prepare, simulate, iterate
 
