@@ -313,7 +313,11 @@ With AWS, there are a number of different approaches you can use when addressing
 
 Data classification provides a way to categorize organizational data based on criticality and sensitivity
 
-This can help you determine appropriate protection 
+This can help you determine appropriate protection and retention controls
+
+It is critical to understand the type and classification of data your workload is processing, the associated business processes, where the data is stored, and who the data owner is 
+
+You should also have understanding of the applicable legal and compliance requirements of your workload, and what data controls need to be enforced
 
 Best Practices for classifying data:
 
@@ -324,7 +328,34 @@ Best Practices for classifying data:
 
 ### Protecting Data At Rest
 
+Data at rest represents any data that you persist in nonvolatile storage for any duration in your workload
+
+This includes block storage, object storage, databases, archives, IoT devices, and any other storage medium on which data is persisted  
+
+Protecting your data at rest reduces the risk of unauthorized access, when encryption and appropriate access controls are implemented
+
+Best Practices for protecting data at rest:
+
+- Implement secure key management
+- Enforce encryption at rest
+- Automate data-at-rest protection
+- Enforce access control
+- Use mechanisms to keep people away from data
+
 ### Protecting Data in Transit
+
+Data in transit is any data that is sent from one system to another
+
+This includes communication between resources in your workload and also communication between other services and your end users
+
+By providing the appropriate level of protection for data in transit, you protect the confidentiality and integrity of your workoad's data
+
+Best Practices for protecting data in transit
+
+- Implement secure key and certificate management
+- Enforce encryption in transit
+- Automate detection of unintended data access
+- Authenticate network communications
 
 ## Incident Response
 
