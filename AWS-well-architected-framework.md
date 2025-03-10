@@ -502,10 +502,61 @@ They also include those from within, such as feature deployments and security pa
 
 ### Implement Change
 
-Controlled changes are necessary to deploy new functionality and help ensure that the workloads and operating environment
+Controlled changes are necessary to deploy new functionality and help ensure that the workloads and operating environment are running known and properly patched software
+
+If these changes are uncontrolled then it makes it difficult to predict the effect of these changes or address issues that arise because of them
 
 - Use runbooks for standard activities such as deployment
 - Integrate functional testing as part of your deployment
 - Integrate resilency testing as part of your deployment
 - Deploy using immutable infrastructure
 - Deploy changes with automation
+
+## Failure Management
+
+Low-level hardware component failures are something to be dealt with every day in an on-premises data center
+
+In the cloud, however, you should be protected against most of these types of failures
+
+Regardless of your cloud provider, there is the potential for failures to impact your workload
+
+Therefore, you must take steps to implement resilence
+
+A prerequiste to applying the best practices discussed here is that you must ensure that the people designing, implementing, and operating your workloads are aware of business objectives and the reliability goals to achieve these
+
+These people must be aware of and trained for these reliability requirements
+
+### Back up data
+
+Back up data, applications, and configurations to meet requirements for recovery time objectives (RTO) and recovery point objectives (RPO)
+
+- Identify and back up all data that needs to be backed up
+- Secure and encrypt backups
+- Perform data backup automatically
+- Perform periodic recovery of data to verify backup integrity and processes
+
+### Use fault isolation to protect your workload
+
+Fault-isolated boundaries limit the effect of a failure inside a workload to a limited number of components
+
+Components outside of the boundary are unaffected by the failure
+
+Using multiple fault isolated boundaries, you can limit the impact on your workload
+
+- Deploy workload to multiple locations
+- Select appropriate locations for your multi-location deployment
+- Automate recovery for components constrained to a single location
+- Use bulkhead architectures to limit scope of impact
+
+### Design workload to withstand component failures
+
+- Monitor all components of workload to detect failures
+- Fail over to healthy resources
+- Automate healing on all layers
+- Rely on data plane, not control plane, during recovery
+- Use static stability to prevent bimodal behavior
+- Send notifications when events impact avaliability
+- Architect product to meet availiability targets and uptime SLAs
+
+### Test reliability
+
