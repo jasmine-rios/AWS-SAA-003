@@ -638,10 +638,71 @@ But, the optimal compute solution for a workload will always vary based on your 
 
 #### Storage architecture selection
 
+The optimal storage solution for a system varies based on the kind of access method, which could be block, file, object, and based on if the patterns of access are random or sequential.
+
+It also depends on needed throughput and avaliabilty and durability constraints
+
+It could also differ based on frequency of access or frequency of update
+
+- Understand storage characteristics and requirements
+- Make decisions based on access patterns and metrics
+- Evaluate avaliable configuration options
+
 #### Database architecture selection
 
+Choosing the wrong database solution and features for a system can lower performance efficiency
+
+Therefore, when deciding for an optimal database solution, it is important to consider the requirements 
+
+Examples include avaliblity, consistency, partition tolerance, latency, durability, scalability, and query capability
+
+- Understand data characteristics
+- Evaluate the availiable options
+- Collect and record database performance metrics
+- Choose data based on access patterns
+- Optimize data storage based on access patterns and metrics
+
 #### Network architecture selection
+
+Network architecture selection can have great impacts (both positive and negative) on workload performance and behavior, because the network is between all workload components
+
+There are also workloads that are heavily dependent on network performance such as high-performance computing (HPC) in which deep network understanding is important to increase cluster performance
+
+You must detertime the workload requirements for network latency, jitter, and throughput
+
+- Understand how networking impacts performance
+- Evaluate avaliable networking features
+- Choose appropriately sized dedicated connectivity or VPN for hybird workloads
+- Leverage load-balancing and encryption offloading
+- Choose network protocols to improve performance
+- Choose your workload's location based on network requirements
+- Optimize network configuration based on metrics
 
 ### Review
 
 #### Evolve your workload to take advantage of new releases
+
+- Stay up-to-date on new resources and services
+- Define a process to improve workload performance
+- Evolve workload performance over time
+
+### Monitoring
+
+#### Monitoring resources to ensure expected performance
+
+- Record performance-related metrics
+- Analyze metrics when events or incidents occur
+- Establish KPIs to measure workload performance
+- Use monitoring to generate alarm-based notifications
+- Review metrics at regular intervals
+- Monitor and alarm proactively
+
+### Trade-Offs
+
+#### Using trade-offs to improve performance
+
+- Understand areas where performance is most critical
+- Learn about design patterns and services
+- Identify how trade-offs impact customers and efficiency
+- Measure impact of performance improvements
+- Use various performance-related strategies
