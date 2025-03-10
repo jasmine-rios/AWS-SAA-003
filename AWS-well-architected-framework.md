@@ -706,3 +706,6 @@ You must detertime the workload requirements for network latency, jitter, and th
 - Identify how trade-offs impact customers and efficiency
 - Measure impact of performance improvements
 - Use various performance-related strategies
+
+## Module 8 Deep Dive on the Sustainability Pillar
+
