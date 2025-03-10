@@ -581,3 +581,43 @@ Having backups and redundant worload components in place is the start of your di
 - Test disaster recovery implementation to validate implementation
 - Mange configuration drift at the DR site or Region
 - Automate recovery
+
+# Module 7 Deep Dive on the Performance Efficiency Pillar
+
+## What is the performance efficiency pillar?
+
+The performance efficency pillar focuses on the efficent use of computing resources to meet requirements, and how to maintain efficiency as demand changes and technologies evolve.
+
+## Performance Efficency Design Principles
+
+- Democratize advanced technologies
+- Go global in minutes
+- Use serverless architectures
+- Experiment more often
+- Consider mechanical sympathy
+
+## Performance Efficiency Best Practices
+
+- Selection
+- Review
+- Monioring
+- Trade-offs
+
+### Selection
+
+#### Performance architecture selection
+
+For performance architecture selection, use a data-driven approach to select the patterns and implementation for your architecture and achieve cost-effective solution
+
+Your architecture will likely combine a number of architectural approaches
+
+The implementation of your architecture will use services that are specific to the optimization of your architecture performance 
+
+- Understand the avaliable services and resources
+- Define a process for architectural choices
+- Factor cost requirements into decisions
+- Use policies or reference architectures
+- Use guidance from your cloud provider or an appropriate partner
+- Benchmark existing worloads
+- Load test your worload
+  
