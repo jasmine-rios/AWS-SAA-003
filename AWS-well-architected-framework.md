@@ -436,3 +436,44 @@ In this section, you will learn how to manage service quotas or constraints and 
 - Ensure IP subnet allocation accounts for expansion and availability
 - Prefer hub-and-spoke topologies over many-to-many mesh
 - Enforce non-overlapping private IP ranges in connected address spaces
+
+## Workload Architecture
+
+A reliable workload starts with upfront design decisions for both software and infrastructure
+
+Your architecture choices will impact your workload behavior across all six AWS Well-Architected pillars
+
+For reliability, there are certain patterns to choose
+
+### Design your workload service architecture
+
+- Choose how to segment your workload
+- Build services focused on specific business domains and functionality
+- Provide service contracts per API
+
+### Design interactions in a distributed system to prevent failures
+
+Distubuted systems rely on communications networks to interconnect components, such as servers or services
+
+Your workload must operate reliably despite data loss or latency in these networks
+
+Components of the distributed system should operate in a way that does not negatively impact other components of the worload
+
+These best practices can help prevent failures and improve mean time between failures, or MTBF:
+- Identify which kind of distrubuted system is required
+- Implement loosely coupled dependencies
+- Do constant work
+- Make all responses idempotent
+
+## Design Interactions in a distributed system to mitigate or withstand failures
+
+- Implement graceful degradation to transform hard dependencies to soft
+- Throttle requests
+- Control and limit retry calls
+- Fail fast and limit queues
+- Set client timeouts
+- Make services stateless where possible
+- Implement emergency levers
+
+## Change Management
+ 
