@@ -758,3 +758,26 @@ Accurate cost and usage monitoring helps you understand how profitable organizat
 You can then make more informed decisions about where to allocate resources in your organization 
 
 Awareness of usage at all levels in the organization is key to driving change, as change in usage drives changes in cost
+
+### Governance
+
+Governance is used to establish policies and mechanisms to ensure appropriate costs are incurred while objectives are achieved
+
+By employing a checks-and-balances approach to governance, you can innovate without overspending
+
+- Develop policies based on your organization's requirements
+- Implement goals and targets
+- Implement an account structure
+- Implement groups and roles
+- Implement cost controls
+- Track project lifecycles
+
+### Monitor Cost and Usage
+
+Monitor cost and usuage to establish polcies and procedures to monitor and appropriately allocate your costs
+
+- Configure detailed information sources
+
+### Decommission resources
+
+## Cost-effective resources
