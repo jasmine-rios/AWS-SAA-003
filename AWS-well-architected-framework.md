@@ -707,5 +707,26 @@ You must detertime the workload requirements for network latency, jitter, and th
 - Measure impact of performance improvements
 - Use various performance-related strategies
 
-## Module 8 Deep Dive on the Sustainability Pillar
+# Module 8 Deep Dive on the Cost Optimization Pillar
 
+## What is the cost optimization pillar?
+
+A cost-optimized workload fully utilizes all resources, achieves an outcome at the lowest possible price point, and meets your functional requirements
+
+## Cost Optimization Design Principles
+
+- Practice Cloud Financial Management (CFM)
+- Adopt a consumption model
+- Meature overall efficiency
+- Stop spending money on undifferentiated heavy-lifting
+- Analyze and attribute expenditure
+
+## Cost Optimization Best Practice Areas
+
+- Practice Cloud Financial Management
+- Expenditure and usage awareness
+- Cost-effective resources
+- Management of demand and supply resources
+- Optimization over time
+
+### Practice Cloud Financial Management
