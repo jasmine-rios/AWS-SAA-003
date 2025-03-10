@@ -621,3 +621,27 @@ The implementation of your architecture will use services that are specific to t
 - Benchmark existing worloads
 - Load test your worload
   
+#### Compute architecture selection
+
+When selecting a compute architecture use resources that meet your requirements and performance needs while providing great efficiency of cost and effort
+
+This can help you accomplish more with the same number of resources
+
+But, the optimal compute solution for a workload will always vary based on your application design, usage patterns, and configuration settings 
+
+- Understand avaliable compute configuration options
+- Evaluate avaliable compute options
+- Collect compute-related metrics
+- Determine required configuration by rightsizing
+- Use avaliable elasticitty of resources
+- Continually evaluate compute needs based on metrics
+
+#### Storage architecture selection
+
+#### Database architecture selection
+
+#### Network architecture selection
+
+### Review
+
+#### Evolve your workload to take advantage of new releases
