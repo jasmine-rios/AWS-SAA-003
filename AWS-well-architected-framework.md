@@ -407,3 +407,27 @@ It is helpful to review and incorporate the following areas when thinking about 
 - Workload architecture
 - Change management
 - Failure management
+
+## Foundations
+
+In the foundations best practice area, scope can extend beyond a single workload or project  
+
+It needs to be understood and in place before architecting any system
+
+If you don't, you might face long lead times and blockers along the way
+
+Get these taken care of early so you can be free to change resource size and allocation on demand
+
+In this section, you will learn how to manage service quotas or constraints and plan your network topology
+
+### Manage service quotas and constraints
+
+- Stay aware of service quotas and constraints
+- Manage service quotas across accounts and regions
+- Accommodate fixed service quotas and constraints through architecture
+- Monitor and manage quotas
+- Automate quota management
+- Ensure a sufficient gap exists between current quotas and maximum usage
+
+### Plan your network topology
+
