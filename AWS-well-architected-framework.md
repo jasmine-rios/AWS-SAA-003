@@ -809,6 +809,7 @@ Managed services such as Amazon Relational Database Service, or Amazon RDS, and 
 
 By selecting the appropriate building blocks and managed services, you can optimize a workload for cost
 
+For example, using managed services, you can reduce or remove much of your administrative and operational overhead, freeing you to work on applications and business-related activities
 
 - Identify organization requirement for cost
 - Analyze all workload components
@@ -817,8 +818,14 @@ By selecting the appropriate building blocks and managed services, you can optim
 - Selct components to optimize cost in line with organization priorities
 - Perform cost analysis for different usage over time
 
-  
-
 ### Select correct resource type, size, and number
 
+Select correct resource type, size, and number to ensure that you have the appropriate configuration for the task at hand 
+
+You minimize waste by selecting the most cost-effective, type, size, and number of resources
+
+- Perform cost modeling
+- Select resource type, size, and number based on data
+- Select resource type, size, and number automatically based on metrics
+  
 ### Select pricing model
