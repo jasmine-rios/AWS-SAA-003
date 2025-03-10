@@ -730,3 +730,31 @@ A cost-optimized workload fully utilizes all resources, achieves an outcome at t
 - Optimization over time
 
 ### Practice Cloud Financial Management
+
+Practicing cloud financial management, or CFM, helps organizations realize business value and financial success as they optimize their cost and usuage to scale on AWS
+
+- Establish a cost optimization function
+- Establish a partnership between finance and tech
+- Establish cloud budgets and forecasts
+- Implement cost awareness in your org process
+- Report and notify on cost optimization
+- Monitor cost proactively
+- Keep up-to-date with new service releases
+- Create a cost-aware culture
+- Quantify business value from cost optimization
+
+## Expenditure and Usage Awareness
+
+Understanding your organization's costs and drivers is critical to manage your cost and usage effectively and identify cost-reduction opportunities
+
+Organizations typically operate multiple workloads run by multiple teams
+
+These teams can be in different organization units, each with its own revenue stream
+
+The capability to attribute resource costs to the workloads, individual organization, or product owners drives efficient usage behavior and helps reduce waste
+
+Accurate cost and usage monitoring helps you understand how profitable organization units and products are
+
+You can then make more informed decisions about where to allocate resources in your organization 
+
+Awareness of usage at all levels in the organization is key to driving change, as change in usage drives changes in cost
