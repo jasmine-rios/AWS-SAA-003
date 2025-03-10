@@ -431,3 +431,8 @@ In this section, you will learn how to manage service quotas or constraints and 
 
 ### Plan your network topology
 
+- Use highly avaliable network connectivity for your workload public endpoints
+- Provision redundant connectivity between cloud and on-premises environments
+- Ensure IP subnet allocation accounts for expansion and availability
+- Prefer hub-and-spoke topologies over many-to-many mesh
+- Enforce non-overlapping private IP ranges in connected address spaces
