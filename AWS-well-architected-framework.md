@@ -391,5 +391,12 @@ It is helpful to review and incorporate the following areas when thinking about 
 - AWS services
 - Application awareness
 
-## Prepare, simulate, iterate
+# Module 6 Deep Dive on the Reliabiility Pillar
 
+## Reliability design principles
+
+- Automatically recover from failure
+- Test recoverty procedures
+- Scale horizontally to increase aggregate workload availability
+- Stop guessing capacity
+- Manahe change in automation
