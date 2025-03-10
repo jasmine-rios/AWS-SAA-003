@@ -476,4 +476,36 @@ These best practices can help prevent failures and improve mean time between fai
 - Implement emergency levers
 
 ## Change Management
- 
+
+Changes to your workload or its environment must be anticipated and accommodated to achieve reliable operation of the workload
+
+Changes include those imposed on your workload such as spikes in demand 
+
+They also include those from within, such as feature deployments and security patches
+
+### Monitor workload resources
+
+- Monitor all components for the workload (generation)
+- Define and calculate metrics (aggregation)
+- Send notifications (real-time processing and alarming)
+- Automate responses (real-time processing and alarming)
+- Perform analytics
+- Conduct reviews regularly
+- Monitor end-to-end tracing of requests through your system
+
+### Design a workload to adapt to changes in demand
+
+- Use automation when obtaining or scaling resources
+- Obtain resources upon detection of impairment to a workload
+- Obtain resources upon detection that more resources are needed for a workload
+- Load test your workload
+
+### Implement Change
+
+Controlled changes are necessary to deploy new functionality and help ensure that the workloads and operating environment
+
+- Use runbooks for standard activities such as deployment
+- Integrate functional testing as part of your deployment
+- Integrate resilency testing as part of your deployment
+- Deploy using immutable infrastructure
+- Deploy changes with automation
