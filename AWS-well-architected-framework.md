@@ -776,8 +776,49 @@ By employing a checks-and-balances approach to governance, you can innovate with
 
 Monitor cost and usuage to establish polcies and procedures to monitor and appropriately allocate your costs
 
-- Configure detailed information sources
+This helps you measure and improve the cost efficency of this workload
 
+- Configure detailed information sources
+- Add organization information to cost and usage
+- Identify cost attribution categories
+- Establish organization metrics
+- Configure billing and cost management tools
+- Allocate costs based on workload metrics
+  
 ### Decommission resources
 
+Decommission resources to implement change control and resource management from project inception to end of life
+
+This helps ensure that you shut down or terminate unused resources to reduce waste
+
+- Track resources over their lifetime
+- Implement a decommissioning process
+- Decommission resources
+- Decommision resources automatically
+- Enforce data retention policies
+
 ## Cost-effective resources
+
+Using the appropriate services, resources, and configurations for your workloads is key to cost savings
+
+### Evaluate cost when selecting services
+
+Amazon Elastic Compute Cloud, or Amazon EC2, Amazon Elastic Block Store, or Amazon EBS; and Amazon Simple Storage, or Amazon S3; are building-block AWS services
+
+Managed services such as Amazon Relational Database Service, or Amazon RDS, and Amazon DynamoDBm are higher-level, or application-level, AWS services
+
+By selecting the appropriate building blocks and managed services, you can optimize a workload for cost
+
+
+- Identify organization requirement for cost
+- Analyze all workload components
+- Perform through analysis of each component
+- Select software with cost-effective licensing
+- Selct components to optimize cost in line with organization priorities
+- Perform cost analysis for different usage over time
+
+  
+
+### Select correct resource type, size, and number
+
+### Select pricing model
