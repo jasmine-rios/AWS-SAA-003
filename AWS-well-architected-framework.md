@@ -549,6 +549,7 @@ Using multiple fault isolated boundaries, you can limit the impact on your workl
 - Use bulkhead architectures to limit scope of impact
 
 ### Design workload to withstand component failures
+Workloads with a requirement for high avaliability and low mean time to recovery, or MTTR, must be architected for resilency
 
 - Monitor all components of workload to detect failures
 - Fail over to healthy resources
@@ -560,3 +561,23 @@ Using multiple fault isolated boundaries, you can limit the impact on your workl
 
 ### Test reliability
 
+After designing your workload to be resilient to production stresses, testing is the only way to ensure that it will operate as designed to deliever the resilency you expect
+
+Test to validate your workload meets functional and nonfunctional requirements because bugs or performance bottlenecks can impact its reliability
+
+- Use playbooks to investigate failures
+- Perform post-incident analysis
+- Test functional requirements
+- Test scaling and performance requirements
+- Test resilency using chaos engineering
+- Conduct game days regularly
+
+### Plan for Disaster recovery
+
+Having backups and redundant worload components in place is the start of your disaster recovery strategy
+
+- Define recovery objectives for downtime and data loss
+- Use defined recovery strategies to meet recovery objectives
+- Test disaster recovery implementation to validate implementation
+- Mange configuration drift at the DR site or Region
+- Automate recovery
