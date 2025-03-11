@@ -832,5 +832,9 @@ You minimize waste by selecting the most cost-effective, type, size, and number 
 
 ## What is the sustainability pillar?
 
+The most recent pillar in the AWS Well-Architected Framework and is the practice of understanding impacts of services used, quantifying impacts through entire workload lifecycle, and minimizeing to reduce impacts
+
+Focuses on environmental impacts, especially energy consumption and efficiency, since they are important levers for architects to inform direct action to reduce resource usage
+
 Most recent pillar and was introduced in 2021 for customers to make sustainability decisions about their workloads
 ## Sustainability
