@@ -837,4 +837,16 @@ The most recent pillar in the AWS Well-Architected Framework and is the practice
 Focuses on environmental impacts, especially energy consumption and efficiency, since they are important levers for architects to inform direct action to reduce resource usage
 
 Most recent pillar and was introduced in 2021 for customers to make sustainability decisions about their workloads
-## Sustainability
+
+The sustainability best practices are understand, quantify, and apply
+
+Sustainability would be especially important in situations like customer demand, government regulations, employee demand, impact investing, and sustainability as competetive positioning
+
+## Sustainability Design Principles
+
+- Understand your impact
+- Estalish sustainability goals
+- Maximize utilization
+- Anticipate and adopt new, more efficent hardware and software offerings
+- Use managed services
+- Reduce the downstream impact of your cloud workloads
