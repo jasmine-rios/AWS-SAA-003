@@ -850,3 +850,37 @@ Sustainability would be especially important in situations like customer demand,
 - Anticipate and adopt new, more efficent hardware and software offerings
 - Use managed services
 - Reduce the downstream impact of your cloud workloads
+
+## Sustainability best practices
+
+- Region Selection
+- Alignment to demand
+- Software and architecture patterns
+- Data patterns
+- Hardware and services
+- Process and culture
+
+### Region Selection
+
+The choice of where you put your workload affects its KPIs, including performance, cost, and carbon footprint
+
+To improve these KPIs, you should choose Regions for your workloads based on business requirements and sustainability goals
+
+### Alignment to demand
+
+The way users consume your workloads and other resources can help you identify improvements to meet sustainability goals
+
+- Scale infrastructure with user load
+- Align SLAs with sustainability goals
+- Stop the creation and maintaince of unused assets
+- Optimize geographic placement of workloads for user locations
+- Optimize team member resources for activities performed
+- Implement buffering or throttling to flatten the demand curve
+
+### Sofware and Architecture Patterns
+
+### Data Patterns
+
+### Hardware and Services
+
+### Process and Culture
