@@ -896,7 +896,18 @@ The way users consume your workloads and other resources can help you identify i
 - Minimize data movement across networks
 - Back up data only when difficult to recreate
 
-
 ### Hardware and Services
 
+Look for ways to reduce workload sustainability impacts by making changes to your hardware management practices
+
+- Use the minimum amount of hardware to meet your needs
+- Use instance types with the least impact
+- Use managed services
+- Optimize your use of hardware-based compute accelerators
+
 ### Process and Culture
+
+- Adopt methods that can rapidly introduce sustainability improvements
+- Keep your workload up-to-date
+- Increase utilization of build environments
+- Use managed device farms for testing
