@@ -827,5 +827,10 @@ You minimize waste by selecting the most cost-effective, type, size, and number 
 - Perform cost modeling
 - Select resource type, size, and number based on data
 - Select resource type, size, and number automatically based on metrics
-  
-### Select pricing model
+
+# Domain 9 Deep Dive on the Sustainability Pillar
+
+## What is the sustainability pillar?
+
+Most recent pillar and was introduced in 2021 for customers to make sustainability decisions about their workloads
+## Sustainability
