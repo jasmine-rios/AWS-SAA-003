@@ -877,9 +877,25 @@ The way users consume your workloads and other resources can help you identify i
 - Optimize team member resources for activities performed
 - Implement buffering or throttling to flatten the demand curve
 
-### Sofware and Architecture Patterns
+### Software and Architecture Patterns
+
+- Optimize software and architecture for asynchronous and scheduled jobs
+- Remove or refactor workload components with low or no use
+- Optimize areas of code that consume the most time or resources
+- Optimize impact on customer devices and equipment
+- Use software patterns and architectures that support data access and storage patterns
 
 ### Data Patterns
+
+- Implement a data classification policy
+- Use technologies that support data access and storage patterns
+- Use policies to manage the lifecycle of your datasets
+- Use elasticity and automation to expand block storage or file system
+- Remove unneeded or redundant data
+- Use shared file systems or object storage to access common data
+- Minimize data movement across networks
+- Back up data only when difficult to recreate
+
 
 ### Hardware and Services
 
