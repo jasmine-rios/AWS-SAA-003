@@ -99,6 +99,14 @@ A tips for migrating database to AWS with less cost:
 
 Will schema be fixed through lifecycle?
 
-
 ## Design Cost-Optimized Network Architectures
 
+### Networking
+
+- Amazon VPC: Endpoints
+- AWS Global Accelerator
+- Amazon Route 53
+- Amazon CloudFront
+- AWS Direct Connect
+
+  
