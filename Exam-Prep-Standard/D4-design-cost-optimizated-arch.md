@@ -102,11 +102,41 @@ Will schema be fixed through lifecycle?
 ## Design Cost-Optimized Network Architectures
 
 ### Networking
+Need to know:
+- Fundamentals
+- Services and features
+- Backup and restore services
+- Metrics and IaC
 
-- Amazon VPC: Endpoints
+- Amazon VPC: Endpoints and peering
+- AWS Transit Gateway
+- AWS Client VPN
+- AWS Site-to-site VPN
 - AWS Global Accelerator
 - Amazon Route 53
 - Amazon CloudFront
 - AWS Direct Connect
+
+## Domain 4 Wrap-Up
+
+### Design cost-optimized Architectures Wrap Up
+
+Design cost-optimized storage solutions
+
+Design cost-optimized compute solutions
+
+- AWS Cost Explorer
+- AWS Cost and Usage Report
+- AWS Budgets
+- Savings Plan
+- Amazon EC2 Auto Scaling
+- Amazon Elastic Block Store (Amazon EBS)
+- Amazon Elastic File System (Amazon EFS)
+- Amazon S3
+- Amazon EC2 Auto Scaling
+- AWS Lambda
+- AWS Fargate
+- Amazon Elastic Kubernetes Service (Amazon EKS)
+
 
   
