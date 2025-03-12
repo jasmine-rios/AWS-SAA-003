@@ -138,5 +138,18 @@ Design cost-optimized compute solutions
 - AWS Fargate
 - Amazon Elastic Kubernetes Service (Amazon EKS)
 
+### Design Cost-Optimized Architectures Wrap Up
 
+Design Cost-optimized database solutions
+
+Design cost-optimized network architectures
+
+- Amazon RDS
+- Amazon Aurora
+- Amazon DynamoDB
+- Amazon ElastiCache
+- AWS Backup
+- Amazon VPC
+- AWS Site-to-Site VPN
+- AWS Direct Connect
   
