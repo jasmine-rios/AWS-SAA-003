@@ -455,7 +455,13 @@ What services can we use to optimize Processsing? Amazon EMR, AWS Glue, AWS Lake
 - If your data is stored in S3, you could choose to use Amazon EMR or AWS Glue 
 - If you have large jobs, there are best practices to optimize data access from EMR and Glue to S3.
   Remember S3 can scale horizontally and with EMR and Glue, you can process data in a highly distributed way at a massive scale
-  Depending on your design, you may need to adjust the number of concurrent S3 requests, modify retry strategy for S3 request, or adjust the number of S3 objects    processed  
+  Depending on your design, you may need to adjust the number of concurrent S3 requests, modify retry strategy for S3 request, or adjust the number of S3 objects processed  
 
 What are the ways to optimize your data ingestion and transformation? 
 - If you bill your data lake on S3 using EMR clusters you can transform your data assets to Parquet or use Lambda functions to transfer your data in a data lake built on S3 
+
+## Data Analytics and Visualization
+
+- Amazon Athena
+- AWS Lake Formation
+- Amazon QuickSight
