@@ -465,3 +465,69 @@ What are the ways to optimize your data ingestion and transformation?
 - Amazon Athena
 - AWS Lake Formation
 - Amazon QuickSight
+
+# Domain 3 Wrapup
+
+Be sure to understand how to architect high performing storage, compute, database, network, data injestion, and data transformation solutions and the flexibility that can be added with each
+
+Know the difference between object storage, block storage, and file storage
+
+Know how to scale with EC2, Batch, EMR, Fargate, and Lambda
+
+Know features of app sync
+
+Determine high-performing and/or scalable storage solutions
+
+Design high-performing and elastic compute solutions
+
+Services:
+- Amazon S3
+- Amazon EBS
+- Amazon EFS
+- Amazon FSx
+- AWS Storage Gateway
+- Amazon EC2
+- AWS Batch
+- Amazon EMR
+- AWS Lambda
+- AWS Fargate
+- Amazon Simple Quenue Service (Amazon SQS)
+- Amazon Simple Notification Service (Amazon SNS)
+
+### Design High-Performing Architectures
+
+Determine high-performing database solutions
+
+Determine high-performing and/or scalable network architectures
+
+Determine high-performing data ingestion and transformation solutions
+
+Which services support read replicas? How do they work for each service that supports them?
+-RDS and Aurora. RDS has read replicas to put in another region to improve performance and build back RDS in new region to take over traffic. Aurora has Aurora Global Tables.
+
+Which database services provide cross region support?
+- Amazon Aurora, Amazon DynamoDB, RDS?
+
+How are global databases implemented?
+-
+
+How is auto-scaling implemented for the different database services?
+-
+
+Understand different caching strategies such as lazy loading and write through 
+
+How is capacity planning handled for the database solution you selected
+Services:
+
+- Amazon RDS
+- Amazon Aurora
+- Amazon VPC
+- AWS Transit Gateway
+- Amazon DynamoDB
+- Amazon ElastiCache
+- Amazon CloudFront
+- AWS Global Accelerator
+- AWS Site-to-Site VPN
+- AWS PrivateLink
+- AWS Direct Connect
+- AWS Glue
