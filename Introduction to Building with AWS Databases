@@ -1,0 +1,38 @@
+# Module 1: AWS Well-Architected Framework 
+
+Follow notes from other file in this repo about the framework
+
+# Module 2: Data Types
+
+- Structured Data
+- Unstructed Data
+- Semi-structured Data
+
+## Structured Data
+
+## Unstructured Data
+
+## Semi-Structured Data
+
+# AWS Database Services
+
+## 
+
+# Module 4: Relational Databases:
+
+## Relational Databases Introduction
+
+## Amazon Relational Database Service (Amazon RDS)
+
+## Amazon Aurora
+
+# Module 5: Nonrelational Databases
+
+## Nonrelational Databases Introduction
+
+## Amazon DynamoDB
+
+## Amazon Keyspaces (for Apache Cassandra)
+
+## Amazon Timestream
+
