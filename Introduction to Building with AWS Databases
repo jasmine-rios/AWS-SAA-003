@@ -94,15 +94,65 @@ You can also specifiy AWS Key Management (AWS KMS) customer managed key for encr
 
 ### Use Case: IoT sensor data capture architecture
 
-You use *Amazon SQS* to have sensor data sit in quenue to be processed by *AWS Lambda*
+1. You use *Amazon SQS* to have sensor data sit in quenue to be processed by *AWS Lambda*
 
-This event triggers the *AWS Lamabda* to initiate a function that loads the message into the Timestream table for data storage
+2. This event triggers the *AWS Lamabda* to initiate a function that loads the message into the Timestream table for data storage
 
-*Amazon Timestream* serves as a first-stage repository for all messages sent to the *Amazon SQS* quenue
+3. *Amazon Timestream* serves as a first-stage repository for all messages sent to the *Amazon SQS* quenue
 
-*Amazon EMR* gathers this data from Timestream and processes it then stores it in a *S3 data lake*
+4. *Amazon EMR* gathers this data from Timestream and processes it then stores it in a *S3 data lake*
 
-Once stored in the data lake, *Amazon Athena* can query the data
+5. Once stored in the data lake, *Amazon Athena* can query the data
 
-## Amazon Quantum 
+## Amazon Quantum Ledger Database (Amazon QLDB)
 
+### What is Amazon QLDB?
+
+It is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log 
+
+This log is owned by a centeral trusted authority
+
+QLDB tracks each and every application data change and maintains a complete and verifiable history of changes over time.
+
+### Use Case: Delivering Cryptographically Secure and Verifiable Medical Data
+
+Medical companies use QLDB to maintain their records.
+
+It is not as optimized as others for one-time search, analytics, and reporting, although these are possible
+
+This is how the architecture is configured:
+
+1. *ElastiCache for Memcached* caches user session data to provide near real-time response times
+2. *AWS Elastic Benstalk* deploys and runs the frontend and application logic
+    It offloads the operational work of deployent, patching, and scaling
+3. *Amazon QLDB* maintains and stores unfalsable an crypto verifiable records of medical histories
+    Successful transactions are streamed to Amazon RDS database fir searching and analytics
+4. Data is sent from QLDB and then exported by *Kinesis Data Streams* to Amazon RDS to be queried 
+5. Since Amazon QLDB is not optimized for ad-hoc search, reporting, and analytics, the successful transactions are placed into *Amazon RDS* instead
+   Amazon QLDB remains the database used for a system of record.
+
+## Amazon ElastiCache
+
+### What is Amazon ElastiCache?
+
+It offers managed Redis and memcached distributed memory caches
+
+Seamlessly deploy, run, and scale popular open source-compatible, in-memory data stores
+
+Build data-intensive apps or improve the performance of your existing apps by retrieving data from high throughput and low latency in-memory data stores
+
+### Use Case: Word Press Database Cache Architecture
+
+When database access is causing performance problems for an application, an in-memory cache can improve latency, increase throughput, and ease the load on the database
+
+For this use case, this architecture is one way you can serve cache items in less than a millisecound and scale cost effectively
+
+1. Mobile client connects to WordPress website through *Amazon EC2*
+2. The database is Auroa and uses *ElastiCache* to store data for the website
+   It holds a copy of data retrieved from the database for the specified period of time
+   The only time the database is accessed is when noncached data is required
+3.
+4.
+### Use Case: Scalable Distrubuted Cache Architecture
+
+## Amazon MemoryDB for Redis
