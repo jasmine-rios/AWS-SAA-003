@@ -213,4 +213,52 @@ You can abstract the HTTP sessions from the web servers themselves by storing th
 3. *ElastiCache* distributes the session information across four cache nodes in two different AZs
 
 ## Amazon MemoryDB for Redis
+Amazon MemoryDB for Redis is a Redis-compatible, durable, in-memory database service that delivers ultra-fast performance. It is purpose-built for modern applications with microservices architectures.
 
+MemoryDB is compatible with Redis, a popular open-source datastore
+
+giving customers the ability to quickly build applications using the same flexible and friendly Redis data structures, application programming interfaces (APIs), and commands that they already use today. 
+
+With MemoryDB, all your data is stored in memory, so you can achieve microsecond read and single-digit millisecond write latency and high throughput
+
+MemoryDB also stores data durably across multiple Availability Zones using a distributed transactional log to facilitate fast failover, database recovery, and node restarts
+
+Delivering both in-memory performance and Multi-AZ durability,
+
+Amazon MemoryDB can be used as a high-performance primary database for your microservices applications, eliminating the need to separately manage both a cache and durable database
+
+### Build Web and Mobile Applications
+Use versatile Redis data structures such as 
+        streams, lists, and sets 
+to build content data stores, chat and message queues, and geospatial indexes for demanding, data-intensive web and mobile applications that require low latency and high throughput
+
+### Quickly Access Customer Data for Retail
+
+Deliver personalized customer experiences and manage user profiles, preferences, and inventory tracking and fulfillment with microsecond read and single-digit millisecond write latency
+
+### Develop Online Games
+
+Build player data stores, session history, and leaderboards for gaming applications that require massive scale, low latency, and high concurrency to make real-time updates
+
+### Stream Media and Entertainment
+
+Run high-concurrency streaming data feeds to ingest user activity and support millions of requests per day for media and entertainment applications
+
+### Use Case: Redis Data Structures for Microservices
+
+Redis is an extremely popular choice for low-latency, high-throughput requirements within containerized workloads
+
+Redis has become a preferred in-memory layer for many enterprise organizations and startups
+
+Here, Python microservices on Amazon ECS and MemoryDB for Redis as the backend primary database
+
+1. Clients access the application from a browser
+   The *application load balancer* is the first step in the architecture. From their data is sent to application containers
+2. Container-based microservices are deployed to *Amazon ECS*
+3. *AWS Fargate* is used to help create and update application that need to be built
+4. The application code is deployed into container images and hosted in *Amazon ECR* and configured using an ECS task definition
+5. The microservices interact with *MemoryDB for Redisz8 using the open-source redis-py-cluster aware client
+   The application code also usees Flask to configure a simple API
+   Although the application is built using a shared MemoryDB for Redis cluster, microservices patterns allow independent clusters to be used in a database-per-service model
+   MemoryDB for Redis supports ACLs which can restrict user access to certain keys, and commmands based on an access string
+6. The *CI/CD pipeline* is the final step, making continous updates and improvements to the application and the ECR
