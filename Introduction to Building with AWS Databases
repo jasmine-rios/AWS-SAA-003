@@ -114,6 +114,14 @@ This log is owned by a centeral trusted authority
 
 QLDB tracks each and every application data change and maintains a complete and verifiable history of changes over time.
 
+Storage is billed per GB per month
+
+IOs consumed are billed per million requests
+
+Data transfer charges are based on data transfer IN and data transfer OUT
+
+No charge between QLBD interacting with other AWS services within the same region
+
 ### Use Case: Delivering Cryptographically Secure and Verifiable Medical Data
 
 Medical companies use QLDB to maintain their records.
@@ -140,6 +148,26 @@ It offers managed Redis and memcached distributed memory caches
 Seamlessly deploy, run, and scale popular open source-compatible, in-memory data stores
 
 Build data-intensive apps or improve the performance of your existing apps by retrieving data from high throughput and low latency in-memory data stores
+
+Pay only for what you use, no minimum fee
+
+ElatiCache supports two engines:
+    - Redis
+    - Memcached
+
+### Redis
+
+Redis supports complex data types, data replication, and high avaliability 
+
+It is ideal for sesion caching, full page caching, message quenue applications, leader boards and much more
+
+### Memcached
+
+Is for data that is relatively small and static
+
+For example, a static HTML page or JavaScript and CSS files
+
+Performance is increased instead of waiting for database and Disk I/O
 
 ### Use Case: Word Press Database Cache Architecture
 
