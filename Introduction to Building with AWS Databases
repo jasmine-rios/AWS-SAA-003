@@ -151,8 +151,17 @@ For this use case, this architecture is one way you can serve cache items in les
 2. The database is Auroa and uses *ElastiCache* to store data for the website
    It holds a copy of data retrieved from the database for the specified period of time
    The only time the database is accessed is when noncached data is required
-3.
-4.
+3. *Amazon Aurora* stores all the data for the website
+
 ### Use Case: Scalable Distrubuted Cache Architecture
 
+To address scalabililty and provide a shared data storage for sessions that can be accessible from any individual web sever
+
+You can abstract the HTTP sessions from the web servers themselves by storing them in a remote cache like ElastiCache
+
+1. *Elastic Load Balancer* distributes traffic between two Amazon EC2 web servers
+2. *Amazon EC2* instances are hosyomg the web application and are configured in an Auto Scaling group across two AZs
+3. *ElastiCache* distributes the session information across four cache nodes in two different AZs
+
 ## Amazon MemoryDB for Redis
+
