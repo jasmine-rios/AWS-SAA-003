@@ -329,4 +329,26 @@ This archiecture is one way to solve this use case and used to create an event-d
 5. *Amazon Redshift Spectrum* is used to query both the data within the Amazon Redshift tables and the data gathered from the Lambda function
 
 6. *Amazon Quicksight* uses the Amazon Redshift cluster as a data source
-   The reports and dashboard written in Quicksight can refresh and load all new rec 
+   The reports and dashboard written in Quicksight can refresh and load all new records in real time
+
+## Amazon Athena
+
+Athena is an interactive query service that facilitates analyzing data in Amazon S3 using standard SQL
+
+It is serverless and you only pay for the queries that you run
+
+It is straightfoward to use
+
+Point to your data in Amazon S3, define the schema, and start querying using Standard SQL
+
+Most results are delivered within seconds
+
+With Athena, there is no need for complex ETL jobs to prepare your data for analysis
+
+This helps anyone with SQL skills to quickly analyze large-scale datasets
+
+### Pay Per Query
+
+You only pay for the queries you un
+
+Yu
