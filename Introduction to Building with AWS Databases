@@ -262,3 +262,61 @@ Here, Python microservices on Amazon ECS and MemoryDB for Redis as the backend p
    Although the application is built using a shared MemoryDB for Redis cluster, microservices patterns allow independent clusters to be used in a database-per-service model
    MemoryDB for Redis supports ACLs which can restrict user access to certain keys, and commmands based on an access string
 6. The *CI/CD pipeline* is the final step, making continous updates and improvements to the application and the ECR
+
+# Module 6: Data Access and Analysis
+
+## Data Access and Analysis Introduction
+
+### Data Access and Analysis
+
+Outside your database needs, there are services that AWS offers to help with data access and analysis
+These two services, while they don't fall under a relational or nonrelational database category, are essential tools
+
+### Amazon Redshift
+
+It is a fast, simple, and cost-effective data warehouse
+
+Tens of thousands of customers today rely on Amazon Redshift to analyze exabytes of data and run complex analytical queries, making it the most widely used cloud data warehouse
+
+Run and scale analytics in secounds on all your data without having to manage your data warehouse infrastructure
+
+### Amazon Athena
+
+Amazon Athena is an interactive query service that streamlines analyzing data in Amazon S3 using standard structured query language (SQL)
+
+It is serverless and you only pay for the queries that you run
+
+## Amazon Redshift
+
+### What is Amazon Redshift?
+
+It is a fast, scalable data warehouse that makes it simple and cost effective to analyze all your data across your data warehouse and data lake
+
+It uses machine learning, massively parallel query execution, and columnar storage on high-performance disk
+
+### Use Case: Rich Data Platform Architecture
+
+Redshift is a perfect respository for analytical data
+
+The question becomes how to get quality data into the database with speed, efficency, and accuracy
+
+To solve this case, one option is to use this architecture for building out a rich data platform pulling data from multiple data sources
+
+1. *Amazon RDS* houses a large volume of transactional data that is vital to the analytical processes of the buisness
+
+2. *Amazon S3* bucket contains architeced data from hundreds of data repositories
+
+3. *AWS Glue* is pulling data from both Amazon RDS and AmaazonS3, transforming the data into analyical results, then loading those results into the Amazon Redshift data warehouse
+
+4. *Amazon Redshift* is the final respository for the analytical data
+    Services such as Amazon QuickSight can access the respository for visualization and analysis of the data
+
+### Use Case: Event-driven Data Analysis Architecture
+
+With the speed of data generation increasing all the time. the speed of data analysis and reporting must increase at the same pace
+
+This archiecture is one way to solve this use case and used to create an event-driven data analysis solution
+
+1. *Amazon Kinesis Data Firehose* gathers data from on-premises data servers
+    This processs initiates a Lambda function
+2. 
