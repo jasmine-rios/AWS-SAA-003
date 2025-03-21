@@ -319,4 +319,14 @@ This archiecture is one way to solve this use case and used to create an event-d
 
 1. *Amazon Kinesis Data Firehose* gathers data from on-premises data servers
     This processs initiates a Lambda function
-2. 
+
+2. The *AWS Lambda* function takes the data from the Kinesis Firehose stream and loads it into an Amazon S3 data lake
+
+3. *Amazon S3 Data Lake* stores all the data gathered by Kinesis Data Firehose
+
+4. The *Amazon Redshift* cluster already has been loaded with the analyical data
+
+5. *Amazon Redshift Spectrum* is used to query both the data within the Amazon Redshift tables and the data gathered from the Lambda function
+
+6. *Amazon Quicksight* uses the Amazon Redshift cluster as a data source
+   The reports and dashboard written in Quicksight can refresh and load all new rec 
