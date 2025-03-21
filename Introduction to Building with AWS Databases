@@ -349,6 +349,42 @@ This helps anyone with SQL skills to quickly analyze large-scale datasets
 
 ### Pay Per Query
 
-You only pay for the queries you un
+You only pay for the queries you run
 
-Yu
+You are charged $5 per terabyte scanned by your queries
+
+You can save from 30-90% on your per-query costs and get better performance by compressing, partioning, and converting your data into columnar formats
+
+Athena queries data diretvly in S3 and there are no additional storage charges beyond S3
+
+### Open, Powerful, Standard
+
+Athena uses Presto with ANSI SQL support and works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet
+
+It is ideal for quick, one-time querying but it can also handle complex analysis, including large joins, windows functions, and arrays
+
+It is highly avaliable and runs queries using compute resources across multiple facilities and devices in each facility
+
+Athena uses Amazon S3 as its underlying data store, making your data highly avaliable and durable
+
+### Fast...Really Fast
+
+With Athena, you don't have to worry about not having enough compute resources to get fast, interactive query performance
+
+Athena automatically runs queries in parallel, so most results come back within seconds
+
+### Use Case: Building for Athena Federated Query
+
+One major case for Amazon Athena is using Athena Federated Query so customers can submit a single SQL query and analyze data from multiple sources running on-premises or hosted on the cloud
+
+Athena runs federated queries using data source connectors that run on AWS Lambda
+
+AWS has open-sourced Athena data source connectors for Amazon DynamoDB, Apache Hbase, Amazon DynamoDB (with MongoDB compatibility), Amazon Redshift, Amazon CloudWatch Logs, Amazon CloudWatch Metrics Insights, and JDBC-compliant relational data sources such as MySQL and PostgreSQK under the Apache 2.0 licence
+
+1. Users submit a query using *Athena Federated Query*
+   Amazon SageMaker also runs automated queries
+   Those queries are then sent to an Amazon S3 bucket for data to be analyzed
+
+2. The Federated Queies run on Athena will first go through *Lambda functions*
+   The Lambda functions act as a data source connector
+   You can think of a connector as an extension of the Athena query engine
