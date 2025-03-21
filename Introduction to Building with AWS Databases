@@ -36,3 +36,73 @@ Follow notes from other file in this repo about the framework
 
 ## Amazon Timestream
 
+Amazon Timestream is a fast, scalable serverless time-series database for Internet of Things (IoT) and operational applications
+
+Makes it easy to store and analyze trillions of events a day
+
+Kepps recent data in memory and moves historical data to cost-optimized storage tier based upon user-defined policies
+
+Has a purpose-built query engine that allows to analyze this data without needing to specify if the data is in memory or a cost-optimized tier
+
+Has a built-in-time-series analytics funtion to help identify trends and patterns in near real-time
+
+It is serverless and automatically scales up and down to adjust for capacity and performance
+
+### High Performance at Low Cost
+
+Timestream is designed to facilitate interactive and affortable real-time analytics
+
+Has product features such as scheduled queries, mult-measure records, and data storage tiering
+
+You can proccess, store, and analyze your time-series data at a fraction of the cost of existing time-series solutions
+
+Helps you derieve faster and more-affortable insights from your data so you can continue to make more data-driven business decisions
+
+### Serverless with Auto Scaling
+
+This is serverless which means no servers to manage and no capacity to provision
+
+Gives you the scale to process trillions of event and millions of queries a day
+
+Automatically scales to adjust for capacity
+
+### Data lifecycle management
+
+Simplifies the complex process of data management
+
+Offers storage tiering with a memory store for recent data and magnetic store for historical data
+
+Automates transfer of data from memory store to magnetic store based on user-configurable policies
+
+### Simplifed data access
+
+You no longer have to use disparate tools to access recent and historical data
+
+Has a purpose-build query engine that transparently accessses and combines data across storage tiers without you having to specify the data location
+
+### Purpose-built for Time Series
+
+You can analyze time-series data using SQL using built-in time series functions for smoothing, approximation, and interpolation
+
+Also supports advanced aggregates, windows functions, and complex data types such as arrays and rows
+
+### Always Encrypted
+
+Ensures data is always encrypted at rest or in transit
+
+You can also specifiy AWS Key Management (AWS KMS) customer managed key for encrypting data in the magnetic store
+
+### Use Case: IoT sensor data capture architecture
+
+You use *Amazon SQS* to have sensor data sit in quenue to be processed by *AWS Lambda*
+
+This event triggers the *AWS Lamabda* to initiate a function that loads the message into the Timestream table for data storage
+
+*Amazon Timestream* serves as a first-stage repository for all messages sent to the *Amazon SQS* quenue
+
+*Amazon EMR* gathers this data from Timestream and processes it then stores it in a *S3 data lake*
+
+Once stored in the data lake, *Amazon Athena* can query the data
+
+## Amazon Quantum 
+
