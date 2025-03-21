@@ -143,7 +143,7 @@ This is how the architecture is configured:
 
 ### What is Amazon ElastiCache?
 
-It offers managed Redis and memcached distributed memory caches
+It offers managed Redis and memcached distributed in-memory caches using nodes for frequent reads instead of going to the database
 
 Seamlessly deploy, run, and scale popular open source-compatible, in-memory data stores
 
@@ -151,6 +151,27 @@ Build data-intensive apps or improve the performance of your existing apps by re
 
 Pay only for what you use, no minimum fee
 
+ElastiCache provides storage for one database snapshot at no charge
+
+Each additional snapshot is charged per gigabyte per month
+
+You are only charged for the data transfer in or out of your Amazon EC2 instance
+
+There is no ElastiCache data transfer charge for traffic in or out of the ElastiCache node itself
+
+ElastiCache supports two nodes types:
+    - On-demand
+    - Reserved
+
+### On-demand Nodes
+
+You pay for memory capacity by the hour with no long-term commitments
+
+Pricing is per node/hour consumed from the time you launch a node until you terminate it
+
+### Reserved Nodes
+
+You save up to 75% over on-demand rates by commiting for a one or three-year term 
 ElatiCache supports two engines:
     - Redis
     - Memcached
