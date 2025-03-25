@@ -517,3 +517,46 @@ Source DB > AWS DMS > Target DB
 
 # Module 9: Database Architecture
 
+Server-based or serverless?
+
+## Benefits of a server-based architecture
+
+Developer Perspective: 
+
+- *Predicitive Tasks*: For tasks that use constant or predictive compute, it may be more cost-effective to use server-based billing
+
+- *Testing and Debugging*: Debugging is less complicated because there is visibility into backend processes and the app is not broken up into sepreate, smaller functions
+It is difficult to replicate the serverless environment to see how code will actually perfrom once deployed
+
+- *Fewer Units of Intergration*: Serverless architecture has fewer cimponenets compared to server-based architectures, which helps save time
+
+Business Perspective:
+
+- *Overall Control*: The company owns and manages the infrastructure, which provides full control over all aspects of the application
+
+- *Compliance and Security*: Having full control over the infrastructure allows for full visibility, which might be required for compliance or security standards
+
+- *Legacy Applications*: Existing applications might not have the flexibility of decoupling individual parts and might be better suited to migrate to a server-based architecture
+
+## Benefits of a Serverless Architecture
+
+Developer Perspective:
+
+- *Server Management*: Because there is no backend infrastructure to be responsible for, liability is reduced, and there is no system administration
+
+- *Scalability*: With a serverless architecture, you don't have to think twice about provisioning infrastructure because of its ability to automatically scale with traffic volumes
+
+- *Application Flexibility*: You can migrate individual application features or partical workloads to run on serveless as on-demand events
+   This frees up resources in production to be used for more critical tasks
+
+Business Perspective:
+
+- *Time to Market*: Smaller deployable units results in faster delivery of features to market, increasing the ability to adapt to change
+
+- *Cost*: The cost of hiring backend infrastructure engineers goes down, along with operational costs
+
+- *Customer Obsession*: Abstraction from servers lets companies dedicate more time and resources to developing and improving customer experiencer
+
+- *Startup Friendly*: With the serverless architecture pay-as-you-go model, you can build an environment at a low cost and ease into the market witout dealing with huge bills for minimum traffic
+
+
