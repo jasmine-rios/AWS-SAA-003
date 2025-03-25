@@ -388,3 +388,132 @@ AWS has open-sourced Athena data source connectors for Amazon DynamoDB, Apache H
 2. The Federated Queies run on Athena will first go through *Lambda functions*
    The Lambda functions act as a data source connector
    You can think of a connector as an extension of the Athena query engine
+   These connectors are each associated with a database and tell Athena which tables need to be read, manage parrallelism, and push down filter predicates
+
+3. By using the data connectors from the lambda functions, each of these databases/*AWS services* (Amazon EMR, Amazon Aurora, Amazon DynamoDB, Amazon ElastiCache) 
+   can be queied using Athena Federated Query
+
+4. Redis doesn't have a schema oof its own so *AWS Glue* database and tables need to be set up so the data can be associated to the schema used in the Athena Federated Query
+
+5. The responses from the queries are sent and stored in an *S3 bucket* as a spill-over 
+
+# Module 7: Choosing the Right Database Activity
+
+## Chosing the Right Database
+
+Guess which database to use based on the scenarios below:
+
+Q: A buisness is currently running their inventory management on premises, but is looking to move into the cloud for increased performance and scalability
+
+A: For online transaction processing, or OLTP, and online analytical processing, or OLAP, databases using row-based indexing, we have Amazon Relational Datatbase Service, alsso called *Amazon RDS*.
+Now, this service streamlines setting up, operating, and scaling a relational database in the cloud.
+The service provides cost-efficent and scalable capacity while automating many time-consuming administration tasks, such as hardware provisioning, database setup, patching, and backups
+
+Q: A buiness running a gaming website is noticing that their database is running slowly because of how rapidly they are growing. 
+A: ElastiCache for Redis
+
+Q: A buisness needs a solution that lets database engineers focus their time on customer-facing features instead of routine database maintaince and administration
+A: AWS Aurora 
+
+Q: A business needs a database that can rapidly gather customer data 
+A: Amazon DynamoDB since it is key-value database and really fast and handles a lot of requests
+
+Q: A business needs a way to load data into a warehouse and archieve in storage so they can manage costs
+A: Redshift
+
+Q: A business is working to develop an e-commerce app that specializes in fraud detection. The business needs a solution that can provide near real-time detection.
+The business needs a solution that can provide near real-time detection of patterns that are defined as suspicious and indicate known fraud activity
+A: Amazon Neptime for the Neptune Graph can be used in fraud detection
+
+Q: A business is storing online profiles in which different users provide different types of information. The buines is already using MongoDB, but wants to migrate to the cloud
+A: DocumentDB since it can store semi-structured data as a document and has MongoDB compatibility
+
+# Module 8: AWS Database Migration Tools
+
+## Database Migration
+
+AWS offers two migration tools:
+
+- AWS Database Migration Service (AWS DMS)
+- AWS Schema Conversion Tool (AWS SCT)
+
+Will likely use both together to complete migration
+
+Steps in hetrogenous migration of database in AWS SCT:
+
+1. Determine how heavy a workload will be by using AWS SCT to plan migration
+2. You will have to choose a source and login to the database to connect to it
+3. You will be given an excutive summary in which have details about migrating your schema and spread the responsibility to db admins, app admins, etc
+4. Will give you common issues you will run into and you can go into action items to view the actual code that requires remediation
+
+AWS SCT helps automate schema conversion and other tasks when migrating to new database engine
+
+If you are planning a homogenous migration, you can skip AWS SCT
+
+You can now use AWS DMS to actually migrate the data from your source database to your target database
+
+AWS DMS is fully managed service that easily and securely migrates or replicates your database and data warehouses to AWS 
+
+You can use AWS DMS for homo or heterogenous migrations
+
+You can also use AWS DMS to fan out your migration like taking on-premise Oracle DB to Aurora while also connecting it to Amazon Redshift and Amazon S3 bucket
+or more without any downtime
+
+## Migrating database schemas
+
+There are many different migration strategies. Some common migrations include on-premises DB to AWS cloud, relational db to nonrelational db, and db hosted on EC2 to Aurora
+
+AWS DMS creates only those objects required to efficiently migrate the data
+
+To migrate the remaining database elements and schema, you need to use other tools depending on the type of db migration
+
+For example, migrating MS SQL DB that is on-prem would require use of native MS SQL tools to migrate the db to Amazon RDS for MS SQL
+
+## What is AWS SCT?
+
+AWS Schema Converson Tool (AWS SCT) makes heterogeneous database migrations predictable.
+
+It automatically converts the source database schema and a majority of database code objects-- including views, stored procedures, and functions-- to a format compatible with the target db
+
+Any objects that cannot be automaticaly converted are clearly marked so that they can be manually converted to complete the migarion
+
+AWS SCT can also scan your application source code for embedded SQL statements and convert them as part of a database schema conversion project
+
+During this process, AWS SCT performs cloud-native code optimization by converting legacy Oracle and MS SQL server functions to their equivalent AWS service
+
+This helps you modernize the apps at the time of db migration
+
+## What is AWS DMS?
+
+AWS Database Migration Service (AWS DMS) helps your migrate databases to AWS quickly and securely 
+
+The source db remains fully operational during the migration, minimizing downtime to apps that rely on the db
+
+The AWS DMS can migrate your data to and from the most widely used commercial and open-source databases
+
+AWS DMS supports both homo and hetero migrations and you can also continuously replicate data with low latency from any supported source to any supported target
+
+For example, you can replicate from multiple sources to S3 to build a highly available and scalable data lake solution
+
+You can also consolidate dbs into petabyte-scale data warehouse by streaming data to Redshift
+
+## How do AWS SCT and AWS DMS work together?
+
+AWS SCT enables you to convert your schema, and AWS DMS will help you migrate the actual data in your db
+
+AWS DMS can do migration in two ways:
+
+- full-load migration, in which you stop your system and transfer your data all at once
+
+- Or perform ongoing replication and change data capture, in which you do an initial transfer of data, then repeatedly transfer changes to run two systems in parallel to ensure new system works
+
+Step 1: Convert your schema
+
+Source DB > AWS SCT > Target DB
+
+Step 2: Move your data
+
+Source DB > AWS DMS > Target DB
+
+# Module 9: Database Architecture
+
