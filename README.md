@@ -1,6 +1,6 @@
 # AWS Solutions Architect Associate Renewal Notes 2025
 
-This is a study guide I am using to renew my AWS Solutions Architect Associate
+This is a study guide I am using to renew my AWS Solutions Architect Associate in 2025 (first exam in 2021).
 
 I prepared using AWS Skill Builder Standard Exam Prep Plan: AWS Certified Solutions Architect - Associate
 
